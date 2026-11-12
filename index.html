@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Katalog Epson EcoTank — Printer Ink Tank Indonesia</title>
+  <meta name="description" content="Katalog digital lengkap 49 printer Epson EcoTank (Ink Tank) Indonesia: spesifikasi, fitur, tinta, dan perbandingan." />
+  <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1c1c1e" media="(prefers-color-scheme: dark)" />
+  <meta property="og:title" content="Katalog Epson EcoTank" />
+  <meta property="og:description" content="49 printer ink tank Epson Indonesia dalam satu katalog modern." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- macOS menu bar -->
+  <header class="menubar" role="banner">
+    <div class="menubar-left">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M7 3h10v4H7zM5 8h14a2 2 0 0 1 2 2v6h-4v4H7v-4H3v-6a2 2 0 0 1 2-2zm4 8v2h6v-2zm8-5.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
+      </span>
+      <strong>Katalog EcoTank</strong>
+      <nav class="menu-items" aria-label="Menu">
+        <button data-menu="all">Semua</button>
+        <button data-menu="compare">Bandingkan</button>
+        <button data-menu="ink">Tinta</button>
+        <button data-menu="about">Tentang</button>
+      </nav>
+    </div>
+    <div class="menubar-right">
+      <button class="icon-btn" id="spotlightBtn" aria-label="Cari (Ctrl+K)" title="Cari (⌘K)">
+        <svg viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.24-1.42 1.42-4.24-4.25A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" aria-label="Ganti tema" title="Ganti tema">
+        <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.5 5.5 0 0 1-7.54-7.54A9.1 9.1 0 0 0 12 3z"/></svg>
+      </button>
+      <span id="clock" class="clock"></span>
+    </div>
+  </header>
+
+  <main class="desktop">
+    <!-- Main Finder-style window -->
+    <section class="window main-window" aria-label="Katalog">
+      <aside class="sidebar" id="sidebar">
+        <div class="traffic" aria-hidden="true"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+        <div class="side-group">
+          <h6>Kategori</h6>
+          <ul id="categoryList"></ul>
+        </div>
+        <div class="side-group">
+          <h6>Fitur</h6>
+          <ul id="featureList"></ul>
+        </div>
+        <div class="side-group">
+          <h6>Kode Tinta</h6>
+          <div class="ink-tags" id="inkList"></div>
+        </div>
+        <p class="side-foot">Data: <a href="https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/c/ink-tank" target="_blank" rel="noopener">epson.co.id</a></p>
+      </aside>
+
+      <div class="pane">
+        <div class="toolbar">
+          <div class="traffic mobile-only" aria-hidden="true"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+          <div class="title-block">
+            <h1 id="paneTitle">Semua Printer</h1>
+            <span id="paneCount" class="muted"></span>
+          </div>
+          <div class="toolbar-actions">
+            <div class="segmented" role="tablist" aria-label="Tampilan">
+              <button class="active" data-view="grid" aria-label="Grid" title="Grid">
+                <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zm9 0h7v7h-7zM4 13h7v7H4zm9 0h7v7h-7z"/></svg>
+              </button>
+              <button data-view="list" aria-label="Daftar" title="Daftar">
+                <svg viewBox="0 0 24 24"><path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h16v2H4z"/></svg>
+              </button>
+            </div>
+            <select id="sortSelect" class="select" aria-label="Urutkan">
+              <option value="default">Urutan kategori</option>
+              <option value="name">Nama A–Z</option>
+              <option value="new">Terbaru dulu</option>
+              <option value="weight">Teringan</option>
+            </select>
+            <label class="search">
+              <svg viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.24-1.42 1.42-4.24-4.25A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/></svg>
+              <input id="searchInput" type="search" placeholder="Cari model, fitur…" autocomplete="off" />
+            </label>
+          </div>
+        </div>
+        <div class="chips mobile-only" id="mobileChips"></div>
+        <div id="hero" class="hero"></div>
+        <div id="grid" class="grid" aria-live="polite"></div>
+        <div id="empty" class="empty" hidden>
+          <svg viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.24-1.42 1.42-4.24-4.25A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/></svg>
+          <p>Tidak ada printer yang cocok.</p>
+          <button class="btn" id="resetBtn">Reset filter</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Compare dock -->
+  <div class="dock" id="dock" hidden>
+    <div id="dockItems" class="dock-items"></div>
+    <button class="btn primary" id="compareBtn">Bandingkan</button>
+    <button class="btn ghost" id="clearCompare" aria-label="Kosongkan">✕</button>
+  </div>
+
+  <!-- Modal windows -->
+  <div class="overlay" id="overlay" hidden>
+    <div class="window modal" role="dialog" aria-modal="true" id="modal">
+      <div class="modal-bar">
+        <div class="traffic"><button class="r" data-close aria-label="Tutup"></button><i class="y"></i><i class="g"></i></div>
+        <span class="modal-title" id="modalTitle"></span>
+        <span></span>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Spotlight -->
+  <div class="spotlight-wrap" id="spotlight" hidden>
+    <div class="spotlight" role="dialog" aria-label="Pencarian">
+      <div class="spot-input">
+        <svg viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.24-1.42 1.42-4.24-4.25A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/></svg>
+        <input id="spotInput" placeholder="Pencarian Spotlight" autocomplete="off" />
+      </div>
+      <ul id="spotResults" class="spot-results"></ul>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="assets/data/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
