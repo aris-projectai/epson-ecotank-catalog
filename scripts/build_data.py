@@ -59,8 +59,8 @@ CURATED = {
     "M2140":  ("mono", "Mono All-in-One dengan duplex otomatis.", "005"),
     "M2170":  ("mono", "Mono All-in-One dengan ADF, faks, dan duplex.", "005"),
     "M3170":  ("mono", "Mono All-in-One dengan layar sentuh 2,4\", ADF, dan faks.", "005"),
-    "M15140": ("mono", "Mono A3 hingga 32 ppm dengan duplex A3.", "008"),
-    "M15180": ("mono", "Mono A3 kelas bisnis dengan layar sentuh 4,3\".", "008"),
+    "M15140": ("mono", "Mono A3 hingga 32 ppm dengan duplex A3.", "005"),
+    "M15180": ("mono", "Mono A3 kelas bisnis dengan layar sentuh 4,3\".", "005"),
     "WF-100": ("portable", "Printer portabel dengan baterai, hanya 1,6 kg.", "T289/T290"),
 }
 NEW_2026 = {"L1310", "L1350", "L3311", "L3316", "L3351", "L3356", "L4360", "L5391", "L6370", "L6390", "M1050", "M2050"}
@@ -132,6 +132,8 @@ def main():
             if c.startswith("_"): continue
             if model in ("L6460", "L6490") and "Consumables" in c:
                 kv = {k: re.sub(r"C13T03Y([1-4])00", r"008 (C13T06G\g<1>00)", v) for k, v in kv.items()}
+            if model in ("M15140", "M15180") and "Consumables" in c:
+                kv = {k: re.sub(r"008\b[^,]*", "005", v) for k, v in kv.items()}
             clean_specs[c] = kv
         out.append({
             "model": model,

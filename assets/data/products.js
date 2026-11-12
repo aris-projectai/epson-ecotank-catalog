@@ -5449,7 +5449,7 @@ window.PRODUCTS = [
   "image": "assets/img/C11CJ41501.jpg",
   "category": "mono",
   "tagline": "Mono A3 hingga 32 ppm dengan duplex A3.",
-  "ink": "008",
+  "ink": "005",
   "isNew": false,
   "tkdn": false,
   "color": false,
@@ -5558,7 +5558,7 @@ window.PRODUCTS = [
     "Kapasitas Hitam Standar": "Hasil Halaman: 2.000 Kode Order: 005S",
     "Kapasitas Tinggi Hitam": "Hasil Halaman: 6.000 Kode Order: 005",
     "Kotak Pemeliharaan": "C13T04D100",
-    "Pigment Black Ink Bottle": "7.500 pages* - 008 (C13T06G100 / C13T06G199 (EIN))"
+    "Pigment Black Ink Bottle": "7.500 pages* - 005"
    },
    "Interface": {
     "USB": "USB 2.0",
@@ -5604,7 +5604,7 @@ window.PRODUCTS = [
   "image": "assets/img/C11CJ41506.jpg",
   "category": "mono",
   "tagline": "Mono A3 kelas bisnis dengan layar sentuh 4,3\".",
-  "ink": "008",
+  "ink": "005",
   "isNew": false,
   "tkdn": false,
   "color": false,
@@ -5742,7 +5742,7 @@ window.PRODUCTS = [
     "Kapasitas Magenta Standar": "6500 halaman (Hasil Komposit) - 664",
     "Kapasitas Kuning Standar ": "6500 halaman (Hasil Komposit) - 664",
     "Kotak Pemeliharaan": "C12C934591",
-    "Botol Tinta Hitam": "7,500 Page Yield Order Code: 008"
+    "Botol Tinta Hitam": "7,500 Page Yield Order Code: 005"
    },
    "Options": {
     "Epson Print Admin": "Order Code: 7110574"
