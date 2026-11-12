@@ -292,7 +292,7 @@
       ["Duplex / ADF", `${p.duplex ? "Duplex" : "—"} / ${p.adf ? "ADF" : "—"}`],
       ["Layar", p.lcd || "—"],
       ["TKDN + BMP", p.tkdn ? p.tkdnScore : "—"],
-      ...(p.tkdnCert ? [["No. Sertifikat TKDN", p.tkdnCert]] : []),
+      ...(p.tkdnCert ? [["No. Sertifikat TKDN", `<button class="cert-link" data-cert="${esc(p.tkdnCert)}" title="Lihat keterangan sertifikat">${esc(p.tkdnCert)} ↗</button>`, true]] : []),
       ["Berat", p.weight || "—"],
     ];
     const groups = Object.entries(p.specs);
@@ -305,7 +305,7 @@
         <h2>${esc(p.name)}</h2>
         <p class="tagline">${esc(p.tagline)}</p>
         <div class="pills">${pills(p)}</div>
-        <div class="keyspecs">${ks.map(([k, v]) => `<div class="keyspec"><small>${k}</small><b>${esc(v)}</b></div>`).join("")}</div>
+        <div class="keyspecs">${ks.map(([k, v, raw]) => `<div class="keyspec"><small>${k}</small><b>${raw ? v : esc(v)}</b></div>`).join("")}</div>
         <div class="keyspec" style="display:flex;align-items:center;gap:12px">
           <div class="ink-dots">${(ink.colors || []).map((c) => `<i style="background:${c}"></i>`).join("")}</div>
           <div><small>Tinta</small><b>Kode ${esc(p.ink)} — ${esc(ink.type || "")}</b></div>
@@ -346,7 +346,7 @@
       ["Duplex otomatis", (p) => yn(p.duplex), true],
       ["ADF", (p) => yn(p.adf), true],
       ["TKDN + BMP", (p) => p.tkdn ? `<span class="yes">✓ ${esc(p.tkdnScore || "Ya")}</span>` : '<span class="no">—</span>', true],
-      ["No. Sertifikat TKDN", (p) => p.tkdnCert || "—"],
+      ["No. Sertifikat TKDN", (p) => p.tkdnCert ? `<button class="cert-link" data-cert="${esc(p.tkdnCert)}" title="Lihat keterangan sertifikat">${esc(p.tkdnCert)} ↗</button>` : "—", true],
       ["Layar", (p) => p.lcd || "—"],
       ["Kode tinta", (p) => p.ink],
       ["Dimensi", (p) => p.dimensions || "—"],
@@ -407,6 +407,7 @@
 
   /* ---------- Router ---------- */
   function route() {
+    if (location.hash.startsWith("#/cert/")) return; // ditangani cert-popup.js
     const h = decodeURIComponent(location.hash);
     let m;
     if ((m = h.match(/^#\/p\/(.+)$/))) openDetail(m[1]);
