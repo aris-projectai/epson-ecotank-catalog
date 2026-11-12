@@ -61,13 +61,23 @@
     compare: JSON.parse(localStorage.getItem("compare") || "[]").filter((m) => P.some((p) => p.model === m)),
   };
 
-  /* ---------- Theme & clock ---------- */
+  /* ---------- Theme & clock (auto-follows device OS theme) ---------- */
   const root = document.documentElement;
   const params = new URLSearchParams(location.search);
-  const savedTheme = params.get("theme") || localStorage.getItem("theme");
-  const setTheme = (t) => { root.dataset.theme = t; localStorage.setItem("theme", t); };
-  setTheme(savedTheme || "light");
-  $("#themeBtn").onclick = () => setTheme(root.dataset.theme === "dark" ? "light" : "dark");
+  const mq = matchMedia("(prefers-color-scheme: dark)");
+  let manualTheme = params.get("theme") || sessionStorage.getItem("theme_override");
+  const applyTheme = (t) => { root.dataset.theme = t; };
+  applyTheme(manualTheme || (mq.matches ? "dark" : "light"));
+  mq.addEventListener("change", (e) => {
+    sessionStorage.removeItem("theme_override");
+    manualTheme = null;
+    applyTheme(e.matches ? "dark" : "light");
+  });
+  $("#themeBtn").onclick = () => {
+    const next = root.dataset.theme === "dark" ? "light" : "dark";
+    sessionStorage.setItem("theme_override", next);
+    applyTheme(next);
+  };
   const tick = () => {
     const d = new Date();
     $("#clock").textContent = d.toLocaleDateString("id-ID", { weekday: "short", day: "numeric", month: "short" }) + "  " +
@@ -93,6 +103,17 @@
           <span class="chapter-ico">${svg(c.id)}</span>
           <span class="chapter-lbl">${CAT_SHORT[c.id] || c.label}</span>
         </button>`).join("");
+    }
+    if ($("#mobileFeatureBar")) {
+      $("#mobileFeatureBar").innerHTML = `<span class="sf-label">Fitur</span>` +
+        FEATURES.map((f) => `<button class="sf-pill ${state.features.has(f.id) ? "active" : ""}" data-feat="${f.id}">${f.label}</button>`).join("");
+    }
+    if ($("#mobileInkBar")) {
+      $("#mobileInkBar").innerHTML = `<span class="sf-label">Tinta</span>` +
+        Object.keys(INK_INFO).map((k) => {
+          const dots = (INK_INFO[k].colors || []).slice(0, 4).map((c) => `<i style="background:${c}"></i>`).join("");
+          return `<button class="sf-pill ink ${state.ink === k ? "active" : ""}" data-ink="${k}"><span class="sf-dots">${dots}</span>${k}</button>`;
+        }).join("");
     }
     const tags = [
       ...[...state.features].map((id) => `<button class="af-chip" data-feat="${id}">${FEATURES.find((f) => f.id === id).label} ×</button>`),
