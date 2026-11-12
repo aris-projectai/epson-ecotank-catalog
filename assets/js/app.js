@@ -41,6 +41,7 @@
     { id: "fax", label: "Faks", test: (p) => p.functions.includes("Fax") },
     { id: "a3fmt", label: "Cetak A3+", test: (p) => p.format === "A3+" },
     { id: "lcd", label: "Layar LCD", test: (p) => !!p.lcd },
+    { id: "tkdn", label: "TKDN", test: (p) => p.tkdn },
     { id: "new", label: "Baru 2025", test: (p) => p.isNew },
   ];
   const INK_INFO = {
@@ -99,7 +100,7 @@
 
   /* ---------- Filtering ---------- */
   const haystack = (p) => [p.model, p.name, p.tagline, p.sku, p.ink, catLabel(p.category), p.functions.join(" "),
-    p.wifi && "wifi wi-fi wireless", p.duplex && "duplex 2 sisi", p.adf && "adf", p.format, p.isNew && "baru new 2025"].join(" ").toLowerCase();
+    p.wifi && "wifi wi-fi wireless", p.duplex && "duplex 2 sisi", p.adf && "adf", p.format, p.tkdn && "tkdn", p.isNew && "baru new 2025"].join(" ").toLowerCase();
   function filtered() {
     const q = state.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
     let list = P.filter((p) =>
@@ -123,6 +124,7 @@
     if (p.wifi) out.push('<span class="pill green">Wi-Fi</span>');
     if (p.duplex) out.push('<span class="pill orange">Duplex</span>');
     if (p.adf) out.push('<span class="pill">ADF</span>');
+    if (p.tkdn) out.push('<span class="pill red">TKDN</span>');
     return out.join("");
   }
   const imgTag = (p, cls = "") => p.image
@@ -147,7 +149,7 @@
     g.className = "grid" + (state.view === "list" ? " list" : "");
     g.innerHTML = list.map((p, i) => `
       <article class="card" style="animation-delay:${Math.min(i, 16) * 25}ms">
-        ${p.isNew ? '<span class="badge-new">Baru</span>' : ""}
+        ${p.isNew ? '<span class="badge-new">Baru</span>' : p.tkdn ? '<span class="badge-new tkdn">TKDN</span>' : ""}
         <button class="cmp-toggle ${state.compare.includes(p.model) ? "on" : ""}" data-cmp="${p.model}" title="Tambah ke perbandingan" aria-label="Bandingkan ${p.model}">
           ${svg(state.compare.includes(p.model) ? "check" : "plus")}</button>
         <button class="card-img" data-open="${p.model}" aria-label="Detail ${esc(p.name)}">${imgTag(p)}</button>
@@ -242,7 +244,7 @@
     const html = `<div class="detail">
       <div class="detail-media">${imgTag(p)}</div>
       <div class="detail-info">
-        <div class="series">${esc(catLabel(p.category))}${p.isNew ? " · Baru 2025" : ""}</div>
+        <div class="series">${esc(catLabel(p.category))}${p.isNew ? " · Baru 2025" : ""}${p.tkdn ? " · TKDN" : ""}</div>
         <h2>${esc(p.name)}</h2>
         <p class="tagline">${esc(p.tagline)}</p>
         <div class="pills">${pills(p)}</div>
@@ -286,6 +288,7 @@
       ["Ethernet", (p) => yn(p.ethernet), true],
       ["Duplex otomatis", (p) => yn(p.duplex), true],
       ["ADF", (p) => yn(p.adf), true],
+      ["TKDN", (p) => yn(p.tkdn), true],
       ["Layar", (p) => p.lcd || "—"],
       ["Kode tinta", (p) => p.ink],
       ["Dimensi", (p) => p.dimensions || "—"],

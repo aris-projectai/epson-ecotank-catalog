@@ -10,6 +10,7 @@ window.PRODUCTS = [
   "tagline": "Printer warna paling dasar dan ringkas untuk kebutuhan cetak harian.",
   "ink": "664",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -103,6 +104,7 @@ window.PRODUCTS = [
   "tagline": "Cetak warna dengan Wi-Fi dan Wi-Fi Direct, langsung dari smartphone.",
   "ink": "003",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -198,6 +200,7 @@ window.PRODUCTS = [
   "tagline": "Varian L1250 dengan Wi-Fi dan cetak dari smartphone.",
   "ink": "003",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -293,6 +296,7 @@ window.PRODUCTS = [
   "tagline": "Generasi baru, bodi lebih ringkas, hasil hitam hingga 4.700 halaman.",
   "ink": "003",
   "isNew": true,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -373,6 +377,7 @@ window.PRODUCTS = [
   "tagline": "Generasi baru dengan Wi-Fi dan Wi-Fi Direct hingga 8 perangkat.",
   "ink": "003",
   "isNew": true,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -462,6 +467,7 @@ window.PRODUCTS = [
   "tagline": "All-in-One terlaris: cetak, pindai, salin dengan biaya super hemat.",
   "ink": "003",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -574,9 +580,10 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System/Epson-EcoTank-L3211-A4-All-in-One-Ink-Tank-Printer/p/C11CJ68504",
   "image": "assets/img/C11CJ68504.jpg",
   "category": "aio",
-  "tagline": "Varian L3210: cetak, pindai, salin.",
+  "tagline": "Varian TKDN dari L3210: cetak, pindai, salin.",
   "ink": "003",
   "isNew": false,
+  "tkdn": true,
   "color": true,
   "format": "A4",
   "functions": [
@@ -692,6 +699,7 @@ window.PRODUCTS = [
   "tagline": "Varian L3210: cetak, pindai, salin.",
   "ink": "003",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -807,6 +815,7 @@ window.PRODUCTS = [
   "tagline": "All-in-One dengan Wi-Fi untuk rumah modern.",
   "ink": "003",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -926,9 +935,10 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System/Epson-EcoTank-L3251-A4-Wi-Fi-All-in-One-Ink-Tank-Printer/p/C11CJ67506",
   "image": "assets/img/C11CJ67506.jpg",
   "category": "aio",
-  "tagline": "Varian L3250: All-in-One dengan Wi-Fi.",
+  "tagline": "Varian TKDN dari L3250: All-in-One dengan Wi-Fi.",
   "ink": "003",
   "isNew": false,
+  "tkdn": true,
   "color": true,
   "format": "A4",
   "functions": [
@@ -1051,6 +1061,7 @@ window.PRODUCTS = [
   "tagline": "Varian L3250: All-in-One dengan Wi-Fi.",
   "ink": "003",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -1173,6 +1184,7 @@ window.PRODUCTS = [
   "tagline": "Penerus L3210 dengan desain baru yang lebih ringkas.",
   "ink": "003",
   "isNew": true,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -1271,6 +1283,7 @@ window.PRODUCTS = [
   "tagline": "Varian L3311 dengan desain baru yang ringkas.",
   "ink": "003",
   "isNew": true,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -1369,6 +1382,7 @@ window.PRODUCTS = [
   "tagline": "Penerus L3250: All-in-One Wi-Fi generasi baru.",
   "ink": "003",
   "isNew": true,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -1505,6 +1519,7 @@ window.PRODUCTS = [
   "tagline": "Varian L3351: All-in-One Wi-Fi generasi baru.",
   "ink": "003",
   "isNew": true,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -1611,6 +1626,7 @@ window.PRODUCTS = [
   "tagline": "All-in-One lebih cepat hingga 15 ipm, Wi-Fi dan Ethernet.",
   "ink": "003",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -1727,6 +1743,7 @@ window.PRODUCTS = [
   "tagline": "Varian L3550: cepat, Wi-Fi dan Ethernet.",
   "ink": "003",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -1843,6 +1860,7 @@ window.PRODUCTS = [
   "tagline": "All-in-One dengan cetak dua sisi otomatis dan LCD warna.",
   "ink": "001",
   "isNew": true,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -1951,6 +1969,7 @@ window.PRODUCTS = [
   "tagline": "Cetak, pindai, salin, faks dengan ADF untuk kantor kecil.",
   "ink": "003",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -2097,6 +2116,7 @@ window.PRODUCTS = [
   "tagline": "Varian L5290 dengan ADF dan faks.",
   "ink": "003",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -2243,6 +2263,7 @@ window.PRODUCTS = [
   "tagline": "Generasi baru dengan ADF, faks, Ethernet, dan Wi-Fi.",
   "ink": "003",
   "isNew": true,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -2410,6 +2431,7 @@ window.PRODUCTS = [
   "tagline": "Lebih cepat hingga 15 ipm, lengkap dengan ADF dan faks.",
   "ink": "003",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -2547,6 +2569,7 @@ window.PRODUCTS = [
   "tagline": "Duplex otomatis, LCD 2,4\", tinta hitam pigmen yang tajam.",
   "ink": "001",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -2672,6 +2695,7 @@ window.PRODUCTS = [
   "tagline": "Duplex, ADF, dan baki 250 lembar untuk produktivitas.",
   "ink": "001",
   "isNew": true,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -2788,6 +2812,7 @@ window.PRODUCTS = [
   "tagline": "Lengkap: duplex, ADF, faks, dan layar sentuh 2,4\".",
   "ink": "001",
   "isNew": true,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -2915,8 +2940,9 @@ window.PRODUCTS = [
   "image": "assets/img/C11CJ89502.jpg",
   "category": "office",
   "tagline": "Duplex dan ADF dengan kecepatan hingga 15 ipm.",
-  "ink": "001",
+  "ink": "008",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -3011,10 +3037,10 @@ window.PRODUCTS = [
     "Berat": "5.8 kg"
    },
    "Consumables - Updated": {
-    "Botol Tinta Hitam": "7.500 halaman - C13T03Y100",
-    "Tinta Botol Cyan": "6.000 (Hasil Komposit) - C13T03Y200",
-    "Botol Tinta Magenta": "6.000 (Hasil Komposit) - C13T03Y300",
-    "Botol Tinta Kuning": "6.000 (Hasil Komposit) - C13T03Y400",
+    "Botol Tinta Hitam": "7.500 halaman - 008 (C13T06G100)",
+    "Tinta Botol Cyan": "6.000 (Hasil Komposit) - 008 (C13T06G200)",
+    "Botol Tinta Magenta": "6.000 (Hasil Komposit) - 008 (C13T06G300)",
+    "Botol Tinta Kuning": "6.000 (Hasil Komposit) - 008 (C13T06G400)",
     "Kotak Pemeliharaan Seri L6000": "C13T04D100",
     "Kotak Pemeliharaan": "C13T04D100"
    },
@@ -3048,8 +3074,9 @@ window.PRODUCTS = [
   "image": "assets/img/C11CJ88502.jpg",
   "category": "office",
   "tagline": "Duplex, ADF, dan faks untuk kantor yang sibuk.",
-  "ink": "001",
+  "ink": "008",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -3157,10 +3184,10 @@ window.PRODUCTS = [
     "Berat": "5.8 kg"
    },
    "Consumables - Updated": {
-    "Botol Tinta Hitam": "7.500 halaman - C13T03Y100",
-    "Tinta Botol Cyan": "6.000 (Hasil Komposit) - C13T03Y200",
-    "Botol Tinta Magenta": "6.000 (Hasil Komposit) - C13T03Y300",
-    "Botol Tinta Kuning": "6.000 (Hasil Komposit) - C13T03Y400",
+    "Botol Tinta Hitam": "7.500 halaman - 008 (C13T06G100)",
+    "Tinta Botol Cyan": "6.000 (Hasil Komposit) - 008 (C13T06G200)",
+    "Botol Tinta Magenta": "6.000 (Hasil Komposit) - 008 (C13T06G300)",
+    "Botol Tinta Kuning": "6.000 (Hasil Komposit) - 008 (C13T06G400)",
     "Kotak Pemeliharaan Seri L6000": "C13T04D100",
     "Kotak Pemeliharaan": "C13T04D100"
    },
@@ -3196,6 +3223,7 @@ window.PRODUCTS = [
   "tagline": "Bisnis A3, tinta pigmen, 2 kaset kertas 250 lembar.",
   "ink": "008",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3367,6 +3395,7 @@ window.PRODUCTS = [
   "tagline": "Bisnis A3 berkinerja tinggi dengan tinta pigmen.",
   "ink": "008",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3539,6 +3568,7 @@ window.PRODUCTS = [
   "tagline": "Printer warna A3+ dengan LCD 4,3\" untuk poster dan dokumen lebar.",
   "ink": "003",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3634,6 +3664,7 @@ window.PRODUCTS = [
   "tagline": "All-in-One A3+ dengan duplex, ADF, faks, dan Ethernet.",
   "ink": "001",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3785,6 +3816,7 @@ window.PRODUCTS = [
   "tagline": "A3 penuh: cetak, pindai, salin, dan duplex hingga A3.",
   "ink": "008",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3927,6 +3959,7 @@ window.PRODUCTS = [
   "tagline": "A3 penuh dengan kecepatan hingga 25 ipm (hitam dan warna).",
   "ink": "008",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A3+",
   "functions": [
@@ -4071,6 +4104,7 @@ window.PRODUCTS = [
   "tagline": "A3 penuh dengan layar sentuh 4,3\" dan Epson Smart Panel.",
   "ink": "008",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -4232,6 +4266,7 @@ window.PRODUCTS = [
   "tagline": "Printer foto 6 warna A4 dengan tetesan 1,5 pl.",
   "ink": "057",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -4323,6 +4358,7 @@ window.PRODUCTS = [
   "tagline": "All-in-One foto 6 warna dengan layar 2,4\".",
   "ink": "057",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [
@@ -4438,6 +4474,7 @@ window.PRODUCTS = [
   "tagline": "Printer foto 6 warna A3+ untuk kreator dan studio.",
   "ink": "057",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A3+",
   "functions": [
@@ -4533,6 +4570,7 @@ window.PRODUCTS = [
   "tagline": "Printer mono generasi baru dengan Wi-Fi dan Ethernet.",
   "ink": "005",
   "isNew": true,
+  "tkdn": false,
   "color": false,
   "format": "A4",
   "functions": [
@@ -4620,6 +4658,7 @@ window.PRODUCTS = [
   "tagline": "Printer mono ringkas untuk dokumen hitam-putih volume tinggi.",
   "ink": "005",
   "isNew": false,
+  "tkdn": false,
   "color": false,
   "format": "A4",
   "functions": [
@@ -4691,6 +4730,7 @@ window.PRODUCTS = [
   "tagline": "Printer mono dengan Wi-Fi.",
   "ink": "005",
   "isNew": false,
+  "tkdn": false,
   "color": false,
   "format": "A4",
   "functions": [
@@ -4772,6 +4812,7 @@ window.PRODUCTS = [
   "tagline": "Printer mono dengan duplex otomatis dan kaset 250 lembar.",
   "ink": "005",
   "isNew": false,
+  "tkdn": false,
   "color": false,
   "format": "A4",
   "functions": [
@@ -4842,6 +4883,7 @@ window.PRODUCTS = [
   "tagline": "Mono All-in-One dengan ADF, faks, duplex, dan jaringan.",
   "ink": "005",
   "isNew": false,
+  "tkdn": false,
   "color": false,
   "format": "A4",
   "functions": [
@@ -4957,6 +4999,7 @@ window.PRODUCTS = [
   "tagline": "Mono All-in-One generasi baru dengan ADF dan Wi-Fi.",
   "ink": "005",
   "isNew": true,
+  "tkdn": false,
   "color": false,
   "format": "A4",
   "functions": [
@@ -5070,6 +5113,7 @@ window.PRODUCTS = [
   "tagline": "Mono All-in-One dengan duplex otomatis.",
   "ink": "005",
   "isNew": false,
+  "tkdn": false,
   "color": false,
   "format": "A4",
   "functions": [
@@ -5167,6 +5211,7 @@ window.PRODUCTS = [
   "tagline": "Mono All-in-One dengan ADF, faks, dan duplex.",
   "ink": "005",
   "isNew": false,
+  "tkdn": false,
   "color": false,
   "format": "A4",
   "functions": [
@@ -5286,6 +5331,7 @@ window.PRODUCTS = [
   "tagline": "Mono All-in-One dengan layar sentuh 2,4\", ADF, dan faks.",
   "ink": "005",
   "isNew": false,
+  "tkdn": false,
   "color": false,
   "format": "A4",
   "functions": [
@@ -5405,6 +5451,7 @@ window.PRODUCTS = [
   "tagline": "Mono A3 hingga 32 ppm dengan duplex A3.",
   "ink": "008",
   "isNew": false,
+  "tkdn": false,
   "color": false,
   "format": "A4",
   "functions": [
@@ -5559,6 +5606,7 @@ window.PRODUCTS = [
   "tagline": "Mono A3 kelas bisnis dengan layar sentuh 4,3\".",
   "ink": "008",
   "isNew": false,
+  "tkdn": false,
   "color": false,
   "format": "A3+",
   "functions": [
@@ -5731,6 +5779,7 @@ window.PRODUCTS = [
   "tagline": "Printer portabel dengan baterai, hanya 1,6 kg.",
   "ink": "T289/T290",
   "isNew": false,
+  "tkdn": false,
   "color": true,
   "format": "A4",
   "functions": [

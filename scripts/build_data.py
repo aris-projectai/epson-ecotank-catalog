@@ -20,10 +20,10 @@ CURATED = {
     "L1350":  ("print", "Generasi baru dengan Wi-Fi dan Wi-Fi Direct hingga 8 perangkat.", "003"),
     "L11050": ("a3", "Printer warna A3+ dengan LCD 4,3\" untuk poster dan dokumen lebar.", "003"),
     "L3210":  ("aio", "All-in-One terlaris: cetak, pindai, salin dengan biaya super hemat.", "003"),
-    "L3211":  ("aio", "Varian L3210: cetak, pindai, salin.", "003"),
+    "L3211":  ("aio", "Varian TKDN dari L3210: cetak, pindai, salin.", "003"),
     "L3216":  ("aio", "Varian L3210: cetak, pindai, salin.", "003"),
     "L3250":  ("aio", "All-in-One dengan Wi-Fi untuk rumah modern.", "003"),
-    "L3251":  ("aio", "Varian L3250: All-in-One dengan Wi-Fi.", "003"),
+    "L3251":  ("aio", "Varian TKDN dari L3250: All-in-One dengan Wi-Fi.", "003"),
     "L3256":  ("aio", "Varian L3250: All-in-One dengan Wi-Fi.", "003"),
     "L3311":  ("aio", "Penerus L3210 dengan desain baru yang lebih ringkas.", "003"),
     "L3316":  ("aio", "Varian L3311 dengan desain baru yang ringkas.", "003"),
@@ -39,8 +39,8 @@ CURATED = {
     "L6260":  ("office", "Duplex otomatis, LCD 2,4\", tinta hitam pigmen yang tajam.", "001"),
     "L6370":  ("office", "Duplex, ADF, dan baki 250 lembar untuk produktivitas.", "001"),
     "L6390":  ("office", "Lengkap: duplex, ADF, faks, dan layar sentuh 2,4\".", "001"),
-    "L6460":  ("office", "Duplex dan ADF dengan kecepatan hingga 15 ipm.", "001"),
-    "L6490":  ("office", "Duplex, ADF, dan faks untuk kantor yang sibuk.", "001"),
+    "L6460":  ("office", "Duplex dan ADF dengan kecepatan hingga 15 ipm.", "008"),
+    "L6490":  ("office", "Duplex, ADF, dan faks untuk kantor yang sibuk.", "008"),
     "L14150": ("a3", "All-in-One A3+ dengan duplex, ADF, faks, dan Ethernet.", "001"),
     "L6550":  ("a3", "Bisnis A3, tinta pigmen, 2 kaset kertas 250 lembar.", "008"),
     "L6580":  ("a3", "Bisnis A3 berkinerja tinggi dengan tinta pigmen.", "008"),
@@ -64,6 +64,7 @@ CURATED = {
     "WF-100": ("portable", "Printer portabel dengan baterai, hanya 1,6 kg.", "T289/T290"),
 }
 NEW_2025 = {"L1310", "L1350", "L3311", "L3316", "L3351", "L3356", "L4360", "L5391", "L6370", "L6390", "M1050", "M2050"}
+TKDN = {"L3211", "L3251"}
 # Variants without specs on the site inherit specs from their base model.
 INHERIT = {"L3211": "L3210", "L3251": "L3250"}
 
@@ -129,6 +130,8 @@ def main():
         clean_specs = {}
         for c, kv in specs.items():
             if c.startswith("_"): continue
+            if model in ("L6460", "L6490") and "Consumables" in c:
+                kv = {k: re.sub(r"C13T03Y([1-4])00", r"008 (C13T06G\g<1>00)", v) for k, v in kv.items()}
             clean_specs[c] = kv
         out.append({
             "model": model,
@@ -140,6 +143,7 @@ def main():
             "tagline": tagline,
             "ink": ink,
             "isNew": model in NEW_2025,
+            "tkdn": model in TKDN,
             "color": cat != "mono",
             "format": fmt,
             "functions": funcs,
