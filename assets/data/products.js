@@ -468,124 +468,6 @@ window.PRODUCTS = [
   }
  },
  {
-  "model": "L3210",
-  "name": "Epson EcoTank L3210",
-  "sku": "C11CJ68501",
-  "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Home-Office-Printers/Epson-EcoTank-L3210-A4-All-in-One-Ink-Tank-Printer/p/C11CJ68501",
-  "image": "assets/img/C11CJ68501.jpg",
-  "category": "aio",
-  "tagline": "All-in-One terlaris: cetak, pindai, salin dengan biaya super hemat.",
-  "ink": "003",
-  "isNew": false,
-  "tkdn": false,
-  "tkdnScore": "",
-  "tkdnCert": "",
-  "color": true,
-  "format": "A4",
-  "functions": [
-   "Print",
-   "Scan",
-   "Copy"
-  ],
-  "wifi": false,
-  "ethernet": false,
-  "duplex": false,
-  "adf": false,
-  "resolution": "5760 x 1440 dpi",
-  "speedIso": "Hingga 10 ipm/5,0 ipm",
-  "speedDraft": "Hingga 33 ppm/15 ppm",
-  "lcd": "",
-  "dimensions": "375 x 347 x 179 mm",
-  "weight": "3.9 kg",
-  "inherited": false,
-  "specs": {
-   "Printer Type": {
-    "Tipe Printer": "Cetak, Pindai, Salin"
-   },
-   "Printing Technology": {
-    "Metode Cetak": "On-demand inkjet (Piezoelectric)",
-    "Bahasa Printer": "ESC/P-R, ESC/P Raster",
-    "Konfigurasi Nozzle": "180 x 1 nozzles Black, 59 x 1 nozzles per Colour (Cyan, Magenta, Yellow)",
-    "Resolusi Maksimum": "5760 x 1440 dpi",
-    "Pencetakan Otomatis 2 Sisi": "No"
-   },
-   "Print Speed": {
-    "Default Foto - 10 x 15 cm / 4 x 6 \"": "Sekitar 69 detik per Foto (Tepi)/90 detik per Foto (Tanpa Tepi)",
-    "Draf, A4 (Hitam / Warna)": "Hingga 33 ppm/15 ppm",
-    "ISO 24734, A4 Simpleks (Hitam / Warna)": "Hingga 10 ipm/5,0 ipm",
-    "Waktu Keluar Halaman Pertama Dari Mode Siap (Hitam / Warna)": "Sekitar 10 detik/16 detik"
-   },
-   "Copying": {
-    "Kualitas Salinan": "warna/Hitam dan Putih; Draf/Standar",
-    "Salinan Maksimum Dari Dokumen Mandiri": "20 salinan",
-    "Resolusi Salin Maksimum": "300 x 300 dpi",
-    "Ukuran Salin Maksimum": "A4, Letter",
-    "ISO 29183, A4, Simpleks (Hitam / Warna)": "Up to 7.0 ipm / 1.7 ipm"
-   },
-   "Scan Function": {
-    "Tipe Pemindai": "Pemindai gambar berwarna flatbed",
-    "Tipe Sensor": "CIS (Sensor Gambar Kontak)",
-    "Resolusi Optik": "600 x 1200 dpi",
-    "Area Pindai Maksimum": "216 x 297 mm (8,5 x 11,7\")",
-    "Kedalaman Bit Pemindai (Warna)": "48-bit input, 24-bit output",
-    "Kedalaman Bit Pemindai (Skala Abu-abu)": "16-bit input, 8-bit output",
-    "Kedalaman Bit Pemindai (Hitam & Putih)": "16-bit input, 1-bit output"
-   },
-   "Scan Speed": {
-    "Flatbed (Hitam / Warna)": "200 dpi: 11 detik/200 dpi: 32 detik"
-   },
-   "Paper Handling": {
-    "Metode Umpan Kertas": "Umpan gesekan",
-    "Jumlah Baki Kertas": "1",
-    "Kapasitas Input Kertas Standar": "Hingga 20 lembar-Kertas Foto Glossy Premium 10 lembar-Amplop, 30 lembar-Kartu Pos Hingga 100 lembar-A4/Letter Kertas Polos (80 g/m)",
-    "Kapasitas Output": "Up to 30 sheets, A4 plain paper 20 lembar, Kertas Foto Glossy Premium",
-    "Ukuran Kertas": "Legal (8.5 x 14\"), Indian-Legal (215 x 345 mm), 8.5 x 13\", Letter, A4, 16K (195 x 270 mm), B5, A5, B6, A6, Hagaki (100 x 148 mm), 5 x 7\", 5 x 8\", 4 x 6\", Envelopes: #10, DL, C6",
-    "Ukuran Kertas Maksimum": "215.9 x 1200 mm (8.5 x 47.24\")",
-    "Margin Cetak": "0 mm atas, kiri, kanan, Bawah melalui pengaturan khusus pada Driver printer"
-   },
-   "Supported OS and Applications": {
-    "Kompatibilitas Sistem Operasi": "Windows XP / XP Professional / Vista / 7 / 8 / 8.1 / 10 Windows Server 2003 / 2008 / 2012 / 2016 / 2019 Mac OS X 10.6.8 or later"
-   },
-   "Noise Level": {
-    "Pencetakan PC / Default Kertas Polos": "6,5 B(A), 52 dB (A)",
-    "Pencetakan PC / Foto Terbaik Kertas Foto Glossy Premium": "5,2 B(A), 38 dB (A)",
-    "Pencetakan PC / Default Kertas Polos ": "Sound Power (Black / Colour) 6.4 / 6.2 B(A), Sound Pressure (Black / Colour) 50 / 48 dB(A)"
-   },
-   "Dimensions and Weight": {
-    "Dimensi Keseluruhan (L x D x T)": "375 x 347 x 179 mm",
-    "Berat": "3.9 kg"
-   },
-   "Consumables - Updated": {
-    "Botol Tinta Hitam": "4.500 halaman - 003",
-    "Tinta Botol Cyan": "7.500 (Hasil Komposit) - 003",
-    "Botol Tinta Magenta": "7.500 (Hasil Komposit) - 003",
-    "Botol Tinta Kuning": "7.500 (Hasil Komposit) - 003"
-   },
-   "Electrical Specifications": {
-    "Nilai Tegangan": "AC 220-240 V",
-    "Nilai Frekuensi": "50-60 Hz",
-    "Operasi": "14.0 W",
-    "Mode Tidur": "0.4 W",
-    "Daya Mati": "0.2 W",
-    "Siaga": "4.0 W"
-   },
-   "Interface": {
-    "USB": "USB 2.0"
-   },
-   "Printer Software": {
-    "Kompatibilitas Sistem Operasi": "Windows Server 2003 / 2008 / 2012 / 2016 Hanya fungsi pencetakan dan pemindaian yang didukung untuk Sistem Operasi Windows Server Windows XP / Vista / 7 / 8 / 8.1 / 10 Mac OS X 10.6.8 atau lebih baru",
-    "Printer Software": "Epson ScanSmart"
-   },
-   "Print-1": {
-    "Konfigurasi Nozzle": "180 x 1 Nozzle Hitam, 59 x 1 Nozzle per warna (Cyan, Magenta, Kuning)",
-    "Arah Cetak": "Pencetakan Dua Arah",
-    "Ukuran Tetesan Tinta Minimum": "3 pl",
-    "Pencetakan Otomatis 2 Sisi": "Tidak",
-    "Bahasa Printer": "ESC / P-R"
-   }
-  }
- },
- {
   "model": "L3211",
   "name": "Epson EcoTank L3211",
   "sku": "C11CJ68504",
@@ -705,7 +587,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System-Printers/Epson-EcoTank-L3216-A4-All-in-One-Ink-Tank-Printer/p/C11CJ68502",
   "image": "assets/img/C11CJ68502.jpg",
   "category": "aio",
-  "tagline": "Varian L3210: cetak, pindai, salin.",
+  "tagline": "All-in-One putih: cetak, pindai, salin hemat biaya.",
   "ink": "003",
   "isNew": false,
   "tkdn": false,
@@ -813,131 +695,6 @@ window.PRODUCTS = [
    "Printer Software": {
     "Kompatibilitas Sistem Operasi": "Hanya fungsi pencetakan dan pemindaian yang didukung untuk Sistem Operasi Windows Server Windows XP / Vista / 7 / 8 / 8.1 / 10 Mac OS X 10.6.8 atau lebih baru Windows Server 2003 / 2008 / 2012 / 2016",
     "Printer Software": "Epson ScanSmart"
-   }
-  }
- },
- {
-  "model": "L3250",
-  "name": "Epson EcoTank L3250",
-  "sku": "C11CJ67503",
-  "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Home-Office-Printers/Printer-Epson-EcoTank-L3250-A4-Wi-Fi-All-in-One-Ink-Tank/p/C11CJ67503",
-  "image": "assets/img/C11CJ67503.jpg",
-  "category": "aio",
-  "tagline": "All-in-One dengan Wi-Fi untuk rumah modern.",
-  "ink": "003",
-  "isNew": false,
-  "tkdn": false,
-  "tkdnScore": "",
-  "tkdnCert": "",
-  "color": true,
-  "format": "A4",
-  "functions": [
-   "Print",
-   "Scan",
-   "Copy"
-  ],
-  "wifi": true,
-  "ethernet": false,
-  "duplex": false,
-  "adf": false,
-  "resolution": "5760 x 1440 dpi",
-  "speedIso": "Hingga 10 ipm/5,0 ipm",
-  "speedDraft": "Hingga 33 ppm/15 ppm",
-  "lcd": "",
-  "dimensions": "375 x 347 x 179 mm",
-  "weight": "3.9 kg",
-  "inherited": false,
-  "specs": {
-   "Print-1": {
-    "Konfigurasi Nozzle": "180 x 1 Nozzle Hitam, 59 x 1 Nozzle per warna (Cyan, Magenta, Kuning)",
-    "Arah Cetak": "Pencetakan Dua Arah",
-    "Ukuran Tetesan Tinta Minimum": "3 pl",
-    "Pencetakan Otomatis 2 Sisi": "Tidak",
-    "Bahasa Printer": "ESC / P-R"
-   },
-   "Paper Handling": {
-    "Metode Umpan Kertas": "Umpan gesekan",
-    "Jumlah Baki Kertas": "1",
-    "Kapasitas Input Kertas Standar": "Hingga 100 lembar-A4/Letter Kertas Polos (80 g/m) Hingga 20 lembar-Kertas Foto Glossy Premium 10 lembar-Amplop, 30 lembar-Kartu Pos",
-    "Kapasitas Output": "20 lembar, Kertas Foto Glossy Premium Up to 30 sheets, A4 plain paper",
-    "Ukuran Kertas": "Legal (8.5 x 14\"), Indian-Legal (215 x 345 mm), 8.5 x 13\", Letter, A4, 16K (195 x 270 mm), B5, A5, B6, A6, Hagaki (100 x 148 mm), 5 x 7\", 5 x 8\", 4 x 6\", Envelopes: #10, DL, C6",
-    "Ukuran Kertas Maksimum": "215.9 x 1200 mm (8.5 x 47.24\")",
-    "Margin Cetak": "0 mm atas, kiri, kanan, Bawah melalui pengaturan khusus pada Driver printer"
-   },
-   "Mobile and Cloud Solutions": {
-    "Fitur Epson Connect": "Epson iPrint, Epson Email Print, Remote Print Driver",
-    "Solusi Mobile Lainnya": "Epson Smart Panel"
-   },
-   "Supported OS and Applications": {
-    "Kompatibilitas Sistem Operasi": "Windows XP / XP Professional / Vista / 7 / 8 / 8.1 / 10 Windows Server 2003 / 2008 / 2012 / 2016 / 2019 Only printing functions are supported for Windows Server OS Mac OS X 10.6.8 or later"
-   },
-   "Electrical Specifications": {
-    "Nilai Tegangan": "AC 220-240 V",
-    "Nilai Frekuensi": "50-60 Hz",
-    "Operasi": "12.0 W",
-    "Mode Tidur": "0.7 W",
-    "Daya Mati": "0.2 W",
-    "Siaga": "4.5 W"
-   },
-   "Printer Software": {
-    "Kompatibilitas Sistem Operasi": "Windows XP / Vista / 7 / 8 / 8.1 / 10 Windows Server 2003 / 2008 / 2012 / 2016 Mac OS X 10.6.8 atau lebih baru Hanya fungsi pencetakan dan pemindaian yang didukung untuk Sistem Operasi Windows Server",
-    "Printer Software": "Epson ScanSmart"
-   },
-   "Printer Type": {
-    "Tipe Printer": "Cetak, Pindai, Salin"
-   },
-   "Printing Technology": {
-    "Metode Cetak": "On-demand inkjet (Piezoelectric)",
-    "Bahasa Printer": "ESC/P-R, ESC/P Raster",
-    "Konfigurasi Nozzle": "180 x 1 nozzles Black, 59 x 1 nozzles per Colour (Cyan, Magenta, Yellow)",
-    "Resolusi Maksimum": "5760 x 1440 dpi",
-    "Pencetakan Otomatis 2 Sisi": "No"
-   },
-   "Print Speed": {
-    "Default Foto - 10 x 15 cm / 4 x 6 \"": "Sekitar 69 detik per Foto (Tepi)/90 detik per Foto (Tanpa Tepi)",
-    "Draf, A4 (Hitam / Warna)": "Hingga 33 ppm/15 ppm",
-    "ISO 24734, A4 Simpleks (Hitam / Warna)": "Hingga 10 ipm/5,0 ipm",
-    "Waktu Keluar Halaman Pertama Dari Mode Siap (Hitam / Warna)": "Sekitar 10 detik/16 detik"
-   },
-   "Copying": {
-    "Kualitas Salinan": "warna/Hitam dan Putih; Draf/Standar",
-    "Salinan Maksimum Dari Dokumen Mandiri": "20 salinan",
-    "Resolusi Salin Maksimum": "300 x 300 dpi",
-    "Ukuran Salin Maksimum": "A4, Letter",
-    "ISO 29183, A4, Simpleks (Hitam / Warna)": "Up to 7.7 ipm / 3.8 ipm"
-   },
-   "Scan Function": {
-    "Tipe Pemindai": "Pemindai gambar berwarna flatbed",
-    "Tipe Sensor": "CIS (Sensor Gambar Kontak)",
-    "Resolusi Optik": "600 x 1200 dpi",
-    "Area Pindai Maksimum": "216 x 297 mm (8,5 x 11,7\")",
-    "Kedalaman Bit Pemindai (Warna)": "48-bit input, 24-bit output",
-    "Kedalaman Bit Pemindai (Skala Abu-abu)": "16-bit input, 8-bit output",
-    "Kedalaman Bit Pemindai (Hitam & Putih)": "16-bit input, 1-bit output"
-   },
-   "Scan Speed": {
-    "Flatbed (Hitam / Warna)": "200 dpi: 11 detik/200 dpi: 32 detik"
-   },
-   "Noise Level": {
-    "Pencetakan PC / Default Kertas Polos": "6,5 B(A), 52 dB (A)",
-    "Pencetakan PC / Foto Terbaik Kertas Foto Glossy Premium": "5,2 B(A), 38 dB (A)",
-    "Pencetakan PC / Default Kertas Polos ": "Sound Power (Black / Colour) 6.4 / 6.2 B(A), Sound Pressure (Black / Colour) 50 / 48 dB(A)"
-   },
-   "Dimensions and Weight": {
-    "Dimensi Keseluruhan (L x D x T)": "375 x 347 x 179 mm",
-    "Berat": "3.9 kg"
-   },
-   "Consumables - Updated": {
-    "Botol Tinta Hitam": "4.500 halaman - 003",
-    "Tinta Botol Cyan": "7.500 (Hasil Komposit) - 003",
-    "Botol Tinta Magenta": "7.500 (Hasil Komposit) - 003",
-    "Botol Tinta Kuning": "7.500 (Hasil Komposit) - 003"
-   },
-   "Interface": {
-    "USB": "USB 2.0",
-    "Jaringan": "Wi-Fi, Wi-Fi Direct",
-    "Protokol Jaringan": "TCP/IPv4, TCP/IPv6",
-    "Protokol Manajemen Jaringan": "SNMP, HTTP, DHCP, APIPA, PING, DDNS, mDNS, SLP, WSD, LLTD"
    }
   }
  },
@@ -1065,7 +822,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System-Printers/Printer-Epson-EcoTank-L3256-A4-Wi-Fi-All-in-One-Ink-Tank/p/C11CJ67504",
   "image": "assets/img/C11CJ67504.jpg",
   "category": "aio",
-  "tagline": "Varian L3250: All-in-One dengan Wi-Fi.",
+  "tagline": "All-in-One putih dengan Wi-Fi dan Epson Smart Panel.",
   "ink": "003",
   "isNew": false,
   "tkdn": false,
@@ -1190,7 +947,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Home-Office-Printers/Epson-EcoTank-L3311-A4-All-in-One-Ink-Tank-Printer/p/C11CL61518",
   "image": "assets/img/C11CL61518.jpg",
   "category": "aio",
-  "tagline": "Penerus L3210 dengan desain baru yang lebih ringkas.",
+  "tagline": "All-in-One generasi baru 2026 dengan desain yang lebih ringkas.",
   "ink": "003",
   "isNew": true,
   "tkdn": false,
@@ -1392,7 +1149,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Home-Office-Printers/Epson-EcoTank-L3351-A4-Wi-Fi-All-in-One-Ink-Tank-Printer/p/C11CL62523",
   "image": "assets/img/C11CL62523.jpg",
   "category": "aio",
-  "tagline": "Penerus L3250: All-in-One Wi-Fi generasi baru.",
+  "tagline": "All-in-One Wi-Fi generasi baru 2026 dengan Epson Smart Panel.",
   "ink": "003",
   "isNew": true,
   "tkdn": false,

@@ -19,15 +19,13 @@ CURATED = {
     "L1310":  ("print", "Generasi baru, bodi lebih ringkas, hasil hitam hingga 4.700 halaman.", "003"),
     "L1350":  ("print", "Generasi baru dengan Wi-Fi dan Wi-Fi Direct hingga 8 perangkat.", "003"),
     "L11050": ("a3", "Printer warna A3+ dengan LCD 4,3\" untuk poster dan dokumen lebar.", "003"),
-    "L3210":  ("aio", "All-in-One terlaris: cetak, pindai, salin dengan biaya super hemat.", "003"),
     "L3211":  ("aio", "All-in-One TKDN (66,45%): cetak, pindai, salin hemat biaya.", "003"),
-    "L3216":  ("aio", "Varian L3210: cetak, pindai, salin.", "003"),
-    "L3250":  ("aio", "All-in-One dengan Wi-Fi untuk rumah modern.", "003"),
+    "L3216":  ("aio", "All-in-One putih: cetak, pindai, salin hemat biaya.", "003"),
     "L3251":  ("aio", "All-in-One Wi-Fi TKDN tertinggi (75,28%) dengan Epson Smart Panel.", "003"),
-    "L3256":  ("aio", "Varian L3250: All-in-One dengan Wi-Fi.", "003"),
-    "L3311":  ("aio", "Penerus L3210 dengan desain baru yang lebih ringkas.", "003"),
+    "L3256":  ("aio", "All-in-One putih dengan Wi-Fi dan Epson Smart Panel.", "003"),
+    "L3311":  ("aio", "All-in-One generasi baru 2026 dengan desain yang lebih ringkas.", "003"),
     "L3316":  ("aio", "Varian L3311 dengan desain baru yang ringkas.", "003"),
-    "L3351":  ("aio", "Penerus L3250: All-in-One Wi-Fi generasi baru.", "003"),
+    "L3351":  ("aio", "All-in-One Wi-Fi generasi baru 2026 dengan Epson Smart Panel.", "003"),
     "L3356":  ("aio", "Varian L3351: All-in-One Wi-Fi generasi baru.", "003"),
     "L3550":  ("aio", "All-in-One lebih cepat hingga 15 ipm, Wi-Fi dan Ethernet.", "003"),
     "L3556":  ("aio", "Varian L3550: cepat, Wi-Fi dan Ethernet.", "003"),
@@ -177,6 +175,8 @@ def main():
     out = []
     for p in data:
         model = model_of(p["name"])
+        if model not in CURATED:
+            continue
         base_specs = p["specs"] or by_model.get(INHERIT.get(model, ""), {}).get("specs", {})
         specs = {**base_specs, **TKDN_SPECS.get(model, {})} if model in TKDN_SPECS else base_specs
         cat, tagline, ink = CURATED[model]
