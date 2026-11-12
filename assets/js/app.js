@@ -42,7 +42,7 @@
     { id: "a3fmt", label: "Cetak A3+", test: (p) => p.format === "A3+" },
     { id: "lcd", label: "Layar LCD", test: (p) => !!p.lcd },
     { id: "tkdn", label: "TKDN", test: (p) => p.tkdn },
-    { id: "new", label: "Baru 2025", test: (p) => p.isNew },
+    { id: "new", label: "Baru 2026", test: (p) => p.isNew },
   ];
   const INK_INFO = {
     "664": { type: "Dye 4 warna", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"] },
@@ -100,7 +100,7 @@
 
   /* ---------- Filtering ---------- */
   const haystack = (p) => [p.model, p.name, p.tagline, p.sku, p.ink, catLabel(p.category), p.functions.join(" "),
-    p.wifi && "wifi wi-fi wireless", p.duplex && "duplex 2 sisi", p.adf && "adf", p.format, p.tkdn && "tkdn", p.isNew && "baru new 2025"].join(" ").toLowerCase();
+    p.wifi && "wifi wi-fi wireless", p.duplex && "duplex 2 sisi", p.adf && "adf", p.format, p.tkdn && "tkdn", p.isNew && "baru new 2026"].join(" ").toLowerCase();
   function filtered() {
     const q = state.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
     let list = P.filter((p) =>
@@ -140,7 +140,7 @@
     $("#hero").innerHTML = `<h2>${isHome ? "Epson EcoTank" : esc(cat.label)}</h2><p>${esc(cat.desc)}</p>` + (isHome ? `
       <div class="stats">
         <div class="stat"><b>${P.length}</b><span>Model printer</span></div>
-        <div class="stat"><b>${P.filter((p) => p.isNew).length}</b><span>Model baru 2025</span></div>
+        <div class="stat"><b>${P.filter((p) => p.isNew).length}</b><span>Model baru 2026</span></div>
         <div class="stat"><b>${P.filter((p) => p.wifi).length}</b><span>Dengan Wi-Fi</span></div>
         <div class="stat"><b>${P.filter((p) => p.format === "A3+").length}</b><span>Format A3+</span></div>
         <div class="stat"><b>s.d. 8.500</b><span>Halaman / botol hitam</span></div>
@@ -244,7 +244,7 @@
     const html = `<div class="detail">
       <div class="detail-media">${imgTag(p)}</div>
       <div class="detail-info">
-        <div class="series">${esc(catLabel(p.category))}${p.isNew ? " · Baru 2025" : ""}${p.tkdn ? " · TKDN" : ""}</div>
+        <div class="series">${esc(catLabel(p.category))}${p.isNew ? " · Baru 2026" : ""}${p.tkdn ? " · TKDN" : ""}</div>
         <h2>${esc(p.name)}</h2>
         <p class="tagline">${esc(p.tagline)}</p>
         <div class="pills">${pills(p)}</div>

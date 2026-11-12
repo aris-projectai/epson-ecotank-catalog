@@ -63,7 +63,7 @@ CURATED = {
     "M15180": ("mono", "Mono A3 kelas bisnis dengan layar sentuh 4,3\".", "008"),
     "WF-100": ("portable", "Printer portabel dengan baterai, hanya 1,6 kg.", "T289/T290"),
 }
-NEW_2025 = {"L1310", "L1350", "L3311", "L3316", "L3351", "L3356", "L4360", "L5391", "L6370", "L6390", "M1050", "M2050"}
+NEW_2026 = {"L1310", "L1350", "L3311", "L3316", "L3351", "L3356", "L4360", "L5391", "L6370", "L6390", "M1050", "M2050"}
 TKDN = {"L3211", "L3251"}
 # Variants without specs on the site inherit specs from their base model.
 INHERIT = {"L3211": "L3210", "L3251": "L3250"}
@@ -142,7 +142,7 @@ def main():
             "category": cat,
             "tagline": tagline,
             "ink": ink,
-            "isNew": model in NEW_2025,
+            "isNew": model in NEW_2026,
             "tkdn": model in TKDN,
             "color": cat != "mono",
             "format": fmt,
