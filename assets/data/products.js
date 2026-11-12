@@ -11,6 +11,7 @@ window.PRODUCTS = [
   "ink": "664",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -105,6 +106,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -201,6 +203,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -297,6 +300,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": true,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -378,6 +382,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": true,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -468,6 +473,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -580,10 +586,11 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System/Epson-EcoTank-L3211-A4-All-in-One-Ink-Tank-Printer/p/C11CJ68504",
   "image": "assets/img/C11CJ68504.jpg",
   "category": "aio",
-  "tagline": "Varian TKDN dari L3210: cetak, pindai, salin.",
+  "tagline": "All-in-One TKDN (66,45%): cetak, pindai, salin hemat biaya.",
   "ink": "003",
   "isNew": false,
   "tkdn": true,
+  "tkdnScore": "66,45%",
   "color": true,
   "format": "A4",
   "functions": [
@@ -595,45 +602,37 @@ window.PRODUCTS = [
   "ethernet": false,
   "duplex": false,
   "adf": false,
-  "resolution": "5760 x 1440 dpi",
-  "speedIso": "Hingga 10 ipm/5,0 ipm",
-  "speedDraft": "Hingga 33 ppm/15 ppm",
+  "resolution": "5,760 x 1,440 dpi",
+  "speedIso": "Hingga 10 ipm / 5,0 ipm",
+  "speedDraft": "Approx. 33 ppm / 15 ppm",
   "lcd": "",
   "dimensions": "375 x 347 x 179 mm",
   "weight": "3.9 kg",
-  "inherited": true,
+  "inherited": false,
   "specs": {
+   "Sertifikasi TKDN (FY25)": {
+    "Total Nilai TKDN + BMP": "66,45%",
+    "Referensi": "Katalog Produk Epson TKDN FY25"
+   },
    "Printer Type": {
-    "Tipe Printer": "Cetak, Pindai, Salin"
+    "Tipe Printer": "Print, Scan, Copy"
    },
    "Printing Technology": {
-    "Metode Cetak": "On-demand inkjet (Piezoelectric)",
-    "Bahasa Printer": "ESC/P-R, ESC/P Raster",
-    "Konfigurasi Nozzle": "180 x 1 nozzles Black, 59 x 1 nozzles per Colour (Cyan, Magenta, Yellow)",
-    "Resolusi Maksimum": "5760 x 1440 dpi",
+    "Teknologi Cetak": "On Demand Inkjet (Piezoelectric)",
+    "Resolusi Maksimum": "5,760 x 1,440 dpi (with Variable-Sized Droplet Technology)",
     "Pencetakan Otomatis 2 Sisi": "No"
    },
    "Print Speed": {
-    "Default Foto - 10 x 15 cm / 4 x 6 \"": "Sekitar 69 detik per Foto (Tepi)/90 detik per Foto (Tanpa Tepi)",
-    "Draf, A4 (Hitam / Warna)": "Hingga 33 ppm/15 ppm",
-    "ISO 24734, A4 Simpleks (Hitam / Warna)": "Hingga 10 ipm/5,0 ipm",
-    "Waktu Keluar Halaman Pertama Dari Mode Siap (Hitam / Warna)": "Sekitar 10 detik/16 detik"
+    "Draf, A4 (Hitam / Warna)": "Approx. 33 ppm / 15 ppm",
+    "ISO 24734, A4 Simpleks (Hitam / Warna)": "Hingga 10 ipm / 5,0 ipm"
    },
    "Copying": {
-    "Kualitas Salinan": "warna/Hitam dan Putih; Draf/Standar",
-    "Salinan Maksimum Dari Dokumen Mandiri": "20 salinan",
-    "Resolusi Salin Maksimum": "300 x 300 dpi",
-    "Ukuran Salin Maksimum": "A4, Letter",
+    "Resolusi Salin Maksimum": "600 x 600 dpi",
     "ISO 29183, A4, Simpleks (Hitam / Warna)": "Up to 7.0 ipm / 1.7 ipm"
    },
    "Scan Function": {
-    "Tipe Pemindai": "Pemindai gambar berwarna flatbed",
-    "Tipe Sensor": "CIS (Sensor Gambar Kontak)",
-    "Resolusi Optik": "600 x 1200 dpi",
-    "Area Pindai Maksimum": "216 x 297 mm (8,5 x 11,7\")",
-    "Kedalaman Bit Pemindai (Warna)": "48-bit input, 24-bit output",
-    "Kedalaman Bit Pemindai (Skala Abu-abu)": "16-bit input, 8-bit output",
-    "Kedalaman Bit Pemindai (Hitam & Putih)": "16-bit input, 1-bit output"
+    "Resolusi Optik": "600 x 1,200 dpi",
+    "Kecepatan Pindai (Flatbed 200 dpi)": "Monochrome: 11 sec / Colour: 32 sec"
    },
    "Scan Speed": {
     "Flatbed (Hitam / Warna)": "200 dpi: 11 detik/200 dpi: 32 detik"
@@ -660,10 +659,9 @@ window.PRODUCTS = [
     "Berat": "3.9 kg"
    },
    "Consumables - Updated": {
-    "Botol Tinta Hitam": "4.500 halaman - 003",
-    "Tinta Botol Cyan": "7.500 (Hasil Komposit) - 003",
-    "Botol Tinta Magenta": "7.500 (Hasil Komposit) - 003",
-    "Botol Tinta Kuning": "7.500 (Hasil Komposit) - 003"
+    "Ink Model": "003 (CMYK) — TKDN+BMP: Bk 39,21% · C 27,45% · M 38,70% · Y 36,06%",
+    "Garansi": "2 years or 30,000 pages (+1 year with MyEpson Portal)",
+    "Total Nilai TKDN + BMP": "66,45%"
    },
    "Electrical Specifications": {
     "Nilai Tegangan": "AC 220-240 V",
@@ -674,7 +672,7 @@ window.PRODUCTS = [
     "Siaga": "4.0 W"
    },
    "Interface": {
-    "USB": "USB 2.0"
+    "USB": "USB 2.0 Hi-speed"
    },
    "Printer Software": {
     "Kompatibilitas Sistem Operasi": "Windows Server 2003 / 2008 / 2012 / 2016 Hanya fungsi pencetakan dan pemindaian yang didukung untuk Sistem Operasi Windows Server Windows XP / Vista / 7 / 8 / 8.1 / 10 Mac OS X 10.6.8 atau lebih baru",
@@ -700,6 +698,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -816,6 +815,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -935,10 +935,11 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System/Epson-EcoTank-L3251-A4-Wi-Fi-All-in-One-Ink-Tank-Printer/p/C11CJ67506",
   "image": "assets/img/C11CJ67506.jpg",
   "category": "aio",
-  "tagline": "Varian TKDN dari L3250: All-in-One dengan Wi-Fi.",
+  "tagline": "All-in-One Wi-Fi TKDN tertinggi (75,28%) dengan Epson Smart Panel.",
   "ink": "003",
   "isNew": false,
   "tkdn": true,
+  "tkdnScore": "75,28%",
   "color": true,
   "format": "A4",
   "functions": [
@@ -950,14 +951,18 @@ window.PRODUCTS = [
   "ethernet": false,
   "duplex": false,
   "adf": false,
-  "resolution": "5760 x 1440 dpi",
-  "speedIso": "Hingga 10 ipm/5,0 ipm",
-  "speedDraft": "Hingga 33 ppm/15 ppm",
+  "resolution": "5,760 x 1,440 dpi",
+  "speedIso": "Hingga 10 ipm / 5,0 ipm",
+  "speedDraft": "Approx. 33 ppm / 15 ppm",
   "lcd": "",
   "dimensions": "375 x 347 x 179 mm",
   "weight": "3.9 kg",
-  "inherited": true,
+  "inherited": false,
   "specs": {
+   "Sertifikasi TKDN (FY25)": {
+    "Total Nilai TKDN + BMP": "75,28%",
+    "Referensi": "Katalog Produk Epson TKDN FY25"
+   },
    "Print-1": {
     "Konfigurasi Nozzle": "180 x 1 Nozzle Hitam, 59 x 1 Nozzle per warna (Cyan, Magenta, Kuning)",
     "Arah Cetak": "Pencetakan Dua Arah",
@@ -975,8 +980,7 @@ window.PRODUCTS = [
     "Margin Cetak": "0 mm atas, kiri, kanan, Bawah melalui pengaturan khusus pada Driver printer"
    },
    "Mobile and Cloud Solutions": {
-    "Fitur Epson Connect": "Epson iPrint, Epson Email Print, Remote Print Driver",
-    "Solusi Mobile Lainnya": "Epson Smart Panel"
+    "Fitur Epson Connect": "Epson iPrint, Epson Email Print, Remote Print Driver, Epson Smart Panel"
    },
    "Supported OS and Applications": {
     "Kompatibilitas Sistem Operasi": "Windows XP / XP Professional / Vista / 7 / 8 / 8.1 / 10 Windows Server 2003 / 2008 / 2012 / 2016 / 2019 Only printing functions are supported for Windows Server OS Mac OS X 10.6.8 or later"
@@ -994,36 +998,24 @@ window.PRODUCTS = [
     "Printer Software": "Epson ScanSmart"
    },
    "Printer Type": {
-    "Tipe Printer": "Cetak, Pindai, Salin"
+    "Tipe Printer": "Print, Scan, Copy"
    },
    "Printing Technology": {
-    "Metode Cetak": "On-demand inkjet (Piezoelectric)",
-    "Bahasa Printer": "ESC/P-R, ESC/P Raster",
-    "Konfigurasi Nozzle": "180 x 1 nozzles Black, 59 x 1 nozzles per Colour (Cyan, Magenta, Yellow)",
-    "Resolusi Maksimum": "5760 x 1440 dpi",
+    "Teknologi Cetak": "On Demand Inkjet (Piezoelectric)",
+    "Resolusi Maksimum": "5,760 x 1,440 dpi (with Variable-Sized Droplet Technology)",
     "Pencetakan Otomatis 2 Sisi": "No"
    },
    "Print Speed": {
-    "Default Foto - 10 x 15 cm / 4 x 6 \"": "Sekitar 69 detik per Foto (Tepi)/90 detik per Foto (Tanpa Tepi)",
-    "Draf, A4 (Hitam / Warna)": "Hingga 33 ppm/15 ppm",
-    "ISO 24734, A4 Simpleks (Hitam / Warna)": "Hingga 10 ipm/5,0 ipm",
-    "Waktu Keluar Halaman Pertama Dari Mode Siap (Hitam / Warna)": "Sekitar 10 detik/16 detik"
+    "Draf, A4 (Hitam / Warna)": "Approx. 33 ppm / 15 ppm",
+    "ISO 24734, A4 Simpleks (Hitam / Warna)": "Hingga 10 ipm / 5,0 ipm"
    },
    "Copying": {
-    "Kualitas Salinan": "warna/Hitam dan Putih; Draf/Standar",
-    "Salinan Maksimum Dari Dokumen Mandiri": "20 salinan",
-    "Resolusi Salin Maksimum": "300 x 300 dpi",
-    "Ukuran Salin Maksimum": "A4, Letter",
+    "Resolusi Salin Maksimum": "600 x 600 dpi",
     "ISO 29183, A4, Simpleks (Hitam / Warna)": "Up to 7.7 ipm / 3.8 ipm"
    },
    "Scan Function": {
-    "Tipe Pemindai": "Pemindai gambar berwarna flatbed",
-    "Tipe Sensor": "CIS (Sensor Gambar Kontak)",
-    "Resolusi Optik": "600 x 1200 dpi",
-    "Area Pindai Maksimum": "216 x 297 mm (8,5 x 11,7\")",
-    "Kedalaman Bit Pemindai (Warna)": "48-bit input, 24-bit output",
-    "Kedalaman Bit Pemindai (Skala Abu-abu)": "16-bit input, 8-bit output",
-    "Kedalaman Bit Pemindai (Hitam & Putih)": "16-bit input, 1-bit output"
+    "Resolusi Optik": "1,200 x 2,400 dpi",
+    "Kecepatan Pindai (Flatbed 200 dpi)": "Monochrome: 11 sec / Colour: 28 sec"
    },
    "Scan Speed": {
     "Flatbed (Hitam / Warna)": "200 dpi: 11 detik/200 dpi: 32 detik"
@@ -1038,16 +1030,13 @@ window.PRODUCTS = [
     "Berat": "3.9 kg"
    },
    "Consumables - Updated": {
-    "Botol Tinta Hitam": "4.500 halaman - 003",
-    "Tinta Botol Cyan": "7.500 (Hasil Komposit) - 003",
-    "Botol Tinta Magenta": "7.500 (Hasil Komposit) - 003",
-    "Botol Tinta Kuning": "7.500 (Hasil Komposit) - 003"
+    "Ink Model": "003 (CMYK) — TKDN+BMP: Bk 39,21% · C 27,45% · M 38,70% · Y 36,06%",
+    "Garansi": "2 years or 30,000 pages (+1 year with MyEpson Portal)",
+    "Total Nilai TKDN + BMP": "75,28%"
    },
    "Interface": {
     "USB": "USB 2.0",
-    "Jaringan": "Wi-Fi, Wi-Fi Direct",
-    "Protokol Jaringan": "TCP/IPv4, TCP/IPv6",
-    "Protokol Manajemen Jaringan": "SNMP, HTTP, DHCP, APIPA, PING, DDNS, mDNS, SLP, WSD, LLTD"
+    "Jaringan": "Wi-Fi, Wi-Fi Direct"
    }
   }
  },
@@ -1062,6 +1051,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1185,6 +1175,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": true,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1284,6 +1275,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": true,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1383,6 +1375,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": true,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1520,6 +1513,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": true,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1627,6 +1621,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1744,6 +1739,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1861,6 +1857,7 @@ window.PRODUCTS = [
   "ink": "001",
   "isNew": true,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1970,6 +1967,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2117,6 +2115,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2264,6 +2263,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": true,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2432,6 +2432,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2570,6 +2571,7 @@ window.PRODUCTS = [
   "ink": "001",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2696,6 +2698,7 @@ window.PRODUCTS = [
   "ink": "001",
   "isNew": true,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2813,6 +2816,7 @@ window.PRODUCTS = [
   "ink": "001",
   "isNew": true,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2943,6 +2947,7 @@ window.PRODUCTS = [
   "ink": "008",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -3077,6 +3082,7 @@ window.PRODUCTS = [
   "ink": "008",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -3220,10 +3226,11 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Work-Colour-Ink-Tank-Printers/Printer-Epson-EcoTank-L6550-A4-Colour-Wi-Fi-Duplex-All-in-One-Ink-Tank/p/C11CJ30502",
   "image": "assets/img/C11CJ30502.jpg",
   "category": "a3",
-  "tagline": "Bisnis A3, tinta pigmen, 2 kaset kertas 250 lembar.",
+  "tagline": "Bisnis A3 (TKDN 44,29%), tinta pigmen, 2 kaset kertas 250 lembar.",
   "ink": "008",
   "isNew": false,
-  "tkdn": false,
+  "tkdn": true,
+  "tkdnScore": "44,29%",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3244,6 +3251,10 @@ window.PRODUCTS = [
   "weight": "23kg",
   "inherited": false,
   "specs": {
+   "Sertifikasi TKDN (FY25)": {
+    "Total Nilai TKDN + BMP": "44,29%",
+    "Referensi": "Katalog Produk Epson TKDN FY25"
+   },
    "Printer Type": {
     "Tipe Printer": "Cetak, Pindai, Salin, Faks dengan ADF"
    },
@@ -3392,10 +3403,11 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Work-Colour-Ink-Tank-Printers/Printer-Epson-EcoTank-L6580-A4-Colour-Wi-Fi-Duplex-All-in-One-Ink-Tank/p/C11CJ28502",
   "image": "assets/img/C11CJ28502.jpg",
   "category": "a3",
-  "tagline": "Bisnis A3 berkinerja tinggi dengan tinta pigmen.",
+  "tagline": "Bisnis A3 berkinerja tinggi (TKDN 43,81%) dengan tinta pigmen.",
   "ink": "008",
   "isNew": false,
-  "tkdn": false,
+  "tkdn": true,
+  "tkdnScore": "43,81%",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3416,6 +3428,10 @@ window.PRODUCTS = [
   "weight": "23kg",
   "inherited": false,
   "specs": {
+   "Sertifikasi TKDN (FY25)": {
+    "Total Nilai TKDN + BMP": "43,81%",
+    "Referensi": "Katalog Produk Epson TKDN FY25"
+   },
    "Printer Type": {
     "Tipe Printer": "Cetak, Pindai, Salin, Faks dengan ADF"
    },
@@ -3569,6 +3585,7 @@ window.PRODUCTS = [
   "ink": "003",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3665,6 +3682,7 @@ window.PRODUCTS = [
   "ink": "001",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3813,10 +3831,11 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Home-Office-Printers/Epson-EcoTank-L15150-A3-Wi-Fi-Duplex-All-in-One-Ink-Tank-Printer/p/C11CH72502",
   "image": "assets/img/C11CH72502.jpg",
   "category": "a3",
-  "tagline": "A3 penuh: cetak, pindai, salin, dan duplex hingga A3.",
+  "tagline": "A3 penuh (TKDN 40,18%): cetak, pindai, salin, dan duplex hingga A3.",
   "ink": "008",
   "isNew": false,
-  "tkdn": false,
+  "tkdn": true,
+  "tkdnScore": "40,18%",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3837,6 +3856,10 @@ window.PRODUCTS = [
   "weight": "20.7kg",
   "inherited": false,
   "specs": {
+   "Sertifikasi TKDN (FY25)": {
+    "Total Nilai TKDN + BMP": "40,18%",
+    "Referensi": "Katalog Produk Epson TKDN FY25"
+   },
    "Printer Type": {
     "Tipe Printer": "Print, Scan, Copy, Fax with ADF"
    },
@@ -3956,10 +3979,11 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Work-Colour-Ink-Tank-Printers/Printer-Ink-Tank-All-in-One-Dupleks-Wi-Fi-A3-Epson-EcoTank-L15160/p/C11CH71501",
   "image": "assets/img/C11CH71501.jpg",
   "category": "a3",
-  "tagline": "A3 penuh dengan kecepatan hingga 25 ipm (hitam dan warna).",
+  "tagline": "A3 penuh (TKDN 41,27%) dengan kecepatan hingga 25 ipm.",
   "ink": "008",
   "isNew": false,
-  "tkdn": false,
+  "tkdn": true,
+  "tkdnScore": "41,27%",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3980,6 +4004,10 @@ window.PRODUCTS = [
   "weight": "21.0kg",
   "inherited": false,
   "specs": {
+   "Sertifikasi TKDN (FY25)": {
+    "Total Nilai TKDN + BMP": "41,27%",
+    "Referensi": "Katalog Produk Epson TKDN FY25"
+   },
    "Printer Type": {
     "Tipe Printer": "Print, Scan, Copy, Fax with ADF"
    },
@@ -4101,10 +4129,11 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Work-Colour-Ink-Tank-Printers/Printer-Epson-EcoTank-L15180-A3-Wi-Fi-Duplex-Multi-Function-Ink-Tank/p/C11CH71506",
   "image": "assets/img/C11CH71506.jpg",
   "category": "a3",
-  "tagline": "A3 penuh dengan layar sentuh 4,3\" dan Epson Smart Panel.",
+  "tagline": "A3 penuh (TKDN 41,08%) dengan layar sentuh 4,3\" & Smart Panel.",
   "ink": "008",
   "isNew": false,
-  "tkdn": false,
+  "tkdn": true,
+  "tkdnScore": "41,08%",
   "color": true,
   "format": "A4",
   "functions": [
@@ -4125,6 +4154,10 @@ window.PRODUCTS = [
   "weight": "21.0 kg",
   "inherited": false,
   "specs": {
+   "Sertifikasi TKDN (FY25)": {
+    "Total Nilai TKDN + BMP": "41,08%",
+    "Referensi": "Katalog Produk Epson TKDN FY25"
+   },
    "Printer Type": {
     "Tipe Printer": "Print, Scan, Copy and Fax with ADF"
    },
@@ -4267,6 +4300,7 @@ window.PRODUCTS = [
   "ink": "057",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -4359,6 +4393,7 @@ window.PRODUCTS = [
   "ink": "057",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -4475,6 +4510,7 @@ window.PRODUCTS = [
   "ink": "057",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -4571,6 +4607,7 @@ window.PRODUCTS = [
   "ink": "005",
   "isNew": true,
   "tkdn": false,
+  "tkdnScore": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -4659,6 +4696,7 @@ window.PRODUCTS = [
   "ink": "005",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -4731,6 +4769,7 @@ window.PRODUCTS = [
   "ink": "005",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -4813,6 +4852,7 @@ window.PRODUCTS = [
   "ink": "005",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -4884,6 +4924,7 @@ window.PRODUCTS = [
   "ink": "005",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -5000,6 +5041,7 @@ window.PRODUCTS = [
   "ink": "005",
   "isNew": true,
   "tkdn": false,
+  "tkdnScore": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -5114,6 +5156,7 @@ window.PRODUCTS = [
   "ink": "005",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -5212,6 +5255,7 @@ window.PRODUCTS = [
   "ink": "005",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -5332,6 +5376,7 @@ window.PRODUCTS = [
   "ink": "005",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -5448,10 +5493,11 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System-Printers/Epson-EcoTank-Monochrome-M15140-A3-Wi-Fi-Duplex-All-in-One-Ink-Tank-Printer/p/C11CJ41501",
   "image": "assets/img/C11CJ41501.jpg",
   "category": "mono",
-  "tagline": "Mono A3 hingga 32 ppm dengan duplex A3.",
+  "tagline": "Mono A3 (TKDN 50,66%) hingga 32 ppm dengan duplex A3.",
   "ink": "005",
   "isNew": false,
-  "tkdn": false,
+  "tkdn": true,
+  "tkdnScore": "50,66%",
   "color": false,
   "format": "A4",
   "functions": [
@@ -5472,6 +5518,10 @@ window.PRODUCTS = [
   "weight": "20.2 kg",
   "inherited": false,
   "specs": {
+   "Sertifikasi TKDN (FY25)": {
+    "Total Nilai TKDN + BMP": "50,66%",
+    "Referensi": "Katalog Produk Epson TKDN FY25"
+   },
    "Printer Type": {
     "Tipe Printer": "Cetak, Pindai, Salin, Faks dengan ADF"
    },
@@ -5603,10 +5653,11 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Work-Colour-Ink-Tank-Printers/Printer-Epson-EcoTank-Monochrome-M15180-A3-Wi-Fi-Duplex-Multi-Function-Ink-Tank/p/C11CJ41506",
   "image": "assets/img/C11CJ41506.jpg",
   "category": "mono",
-  "tagline": "Mono A3 kelas bisnis dengan layar sentuh 4,3\".",
+  "tagline": "Mono A3 kelas bisnis (TKDN 47,77%) dengan layar sentuh 4,3\".",
   "ink": "005",
   "isNew": false,
-  "tkdn": false,
+  "tkdn": true,
+  "tkdnScore": "47,77%",
   "color": false,
   "format": "A3+",
   "functions": [
@@ -5627,6 +5678,10 @@ window.PRODUCTS = [
   "weight": "23kg",
   "inherited": false,
   "specs": {
+   "Sertifikasi TKDN (FY25)": {
+    "Total Nilai TKDN + BMP": "47,77%",
+    "Referensi": "Katalog Produk Epson TKDN FY25"
+   },
    "Printer Type": {
     "Tipe Printer": "Cetak, Pindai, Salin, Faks dengan ADF"
    },
@@ -5780,6 +5835,7 @@ window.PRODUCTS = [
   "ink": "T289/T290",
   "isNew": false,
   "tkdn": false,
+  "tkdnScore": "",
   "color": true,
   "format": "A4",
   "functions": [

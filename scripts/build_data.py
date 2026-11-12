@@ -20,10 +20,10 @@ CURATED = {
     "L1350":  ("print", "Generasi baru dengan Wi-Fi dan Wi-Fi Direct hingga 8 perangkat.", "003"),
     "L11050": ("a3", "Printer warna A3+ dengan LCD 4,3\" untuk poster dan dokumen lebar.", "003"),
     "L3210":  ("aio", "All-in-One terlaris: cetak, pindai, salin dengan biaya super hemat.", "003"),
-    "L3211":  ("aio", "Varian TKDN dari L3210: cetak, pindai, salin.", "003"),
+    "L3211":  ("aio", "All-in-One TKDN (66,45%): cetak, pindai, salin hemat biaya.", "003"),
     "L3216":  ("aio", "Varian L3210: cetak, pindai, salin.", "003"),
     "L3250":  ("aio", "All-in-One dengan Wi-Fi untuk rumah modern.", "003"),
-    "L3251":  ("aio", "Varian TKDN dari L3250: All-in-One dengan Wi-Fi.", "003"),
+    "L3251":  ("aio", "All-in-One Wi-Fi TKDN tertinggi (75,28%) dengan Epson Smart Panel.", "003"),
     "L3256":  ("aio", "Varian L3250: All-in-One dengan Wi-Fi.", "003"),
     "L3311":  ("aio", "Penerus L3210 dengan desain baru yang lebih ringkas.", "003"),
     "L3316":  ("aio", "Varian L3311 dengan desain baru yang ringkas.", "003"),
@@ -42,11 +42,11 @@ CURATED = {
     "L6460":  ("office", "Duplex dan ADF dengan kecepatan hingga 15 ipm.", "008"),
     "L6490":  ("office", "Duplex, ADF, dan faks untuk kantor yang sibuk.", "008"),
     "L14150": ("a3", "All-in-One A3+ dengan duplex, ADF, faks, dan Ethernet.", "001"),
-    "L6550":  ("a3", "Bisnis A3, tinta pigmen, 2 kaset kertas 250 lembar.", "008"),
-    "L6580":  ("a3", "Bisnis A3 berkinerja tinggi dengan tinta pigmen.", "008"),
-    "L15150": ("a3", "A3 penuh: cetak, pindai, salin, dan duplex hingga A3.", "008"),
-    "L15160": ("a3", "A3 penuh dengan kecepatan hingga 25 ipm (hitam dan warna).", "008"),
-    "L15180": ("a3", "A3 penuh dengan layar sentuh 4,3\" dan Epson Smart Panel.", "008"),
+    "L6550":  ("a3", "Bisnis A3 (TKDN 44,29%), tinta pigmen, 2 kaset kertas 250 lembar.", "008"),
+    "L6580":  ("a3", "Bisnis A3 berkinerja tinggi (TKDN 43,81%) dengan tinta pigmen.", "008"),
+    "L15150": ("a3", "A3 penuh (TKDN 40,18%): cetak, pindai, salin, dan duplex hingga A3.", "008"),
+    "L15160": ("a3", "A3 penuh (TKDN 41,27%) dengan kecepatan hingga 25 ipm.", "008"),
+    "L15180": ("a3", "A3 penuh (TKDN 41,08%) dengan layar sentuh 4,3\" & Smart Panel.", "008"),
     "L8050":  ("photo", "Printer foto 6 warna A4 dengan tetesan 1,5 pl.", "057"),
     "L18050": ("photo", "Printer foto 6 warna A3+ untuk kreator dan studio.", "057"),
     "L8100":  ("photo", "All-in-One foto 6 warna dengan layar 2,4\".", "057"),
@@ -59,12 +59,84 @@ CURATED = {
     "M2140":  ("mono", "Mono All-in-One dengan duplex otomatis.", "005"),
     "M2170":  ("mono", "Mono All-in-One dengan ADF, faks, dan duplex.", "005"),
     "M3170":  ("mono", "Mono All-in-One dengan layar sentuh 2,4\", ADF, dan faks.", "005"),
-    "M15140": ("mono", "Mono A3 hingga 32 ppm dengan duplex A3.", "005"),
-    "M15180": ("mono", "Mono A3 kelas bisnis dengan layar sentuh 4,3\".", "005"),
+    "M15140": ("mono", "Mono A3 (TKDN 50,66%) hingga 32 ppm dengan duplex A3.", "005"),
+    "M15180": ("mono", "Mono A3 kelas bisnis (TKDN 47,77%) dengan layar sentuh 4,3\".", "005"),
     "WF-100": ("portable", "Printer portabel dengan baterai, hanya 1,6 kg.", "T289/T290"),
 }
 NEW_2026 = {"L1310", "L1350", "L3311", "L3316", "L3351", "L3356", "L4360", "L5391", "L6370", "L6390", "M1050", "M2050"}
-TKDN = {"L3211", "L3251"}
+# Nilai TKDN + BMP berdasarkan Katalog Produk Epson TKDN FY25
+TKDN = {
+    "L3211": "66,45%",
+    "L3251": "75,28%",
+    "L15150": "40,18%",
+    "L15160": "41,27%",
+    "L15180": "41,08%",
+    "M15140": "50,66%",
+    "M15180": "47,77%",
+    "L6550": "44,29%",
+    "L6580": "43,81%",
+}
+# Spesifikasi resmi L3211 & L3251 dari Katalog Produk Epson TKDN FY25 (hal. 4)
+TKDN_SPECS = {
+    "L3211": {
+        "Printer Type": {"Tipe Printer": "Print, Scan, Copy"},
+        "Printing Technology": {
+            "Teknologi Cetak": "On Demand Inkjet (Piezoelectric)",
+            "Resolusi Maksimum": "5,760 x 1,440 dpi (with Variable-Sized Droplet Technology)",
+            "Pencetakan Otomatis 2 Sisi": "No",
+        },
+        "Print Speed": {
+            "Draf, A4 (Hitam / Warna)": "Approx. 33 ppm / 15 ppm",
+            "ISO 24734, A4 Simpleks (Hitam / Warna)": "Hingga 10 ipm / 5,0 ipm",
+        },
+        "Copying": {
+            "Resolusi Salin Maksimum": "600 x 600 dpi",
+            "ISO 29183, A4, Simpleks (Hitam / Warna)": "Up to 7.0 ipm / 1.7 ipm",
+        },
+        "Scan Function": {
+            "Resolusi Optik": "600 x 1,200 dpi",
+            "Kecepatan Pindai (Flatbed 200 dpi)": "Monochrome: 11 sec / Colour: 32 sec",
+        },
+        "Interface": {"USB": "USB 2.0 Hi-speed"},
+        "Consumables - Updated": {
+            "Ink Model": "003 (CMYK) — TKDN+BMP: Bk 39,21% · C 27,45% · M 38,70% · Y 36,06%",
+            "Garansi": "2 years or 30,000 pages (+1 year with MyEpson Portal)",
+            "Total Nilai TKDN + BMP": "66,45%",
+        },
+    },
+    "L3251": {
+        "Printer Type": {"Tipe Printer": "Print, Scan, Copy"},
+        "Printing Technology": {
+            "Teknologi Cetak": "On Demand Inkjet (Piezoelectric)",
+            "Resolusi Maksimum": "5,760 x 1,440 dpi (with Variable-Sized Droplet Technology)",
+            "Pencetakan Otomatis 2 Sisi": "No",
+        },
+        "Print Speed": {
+            "Draf, A4 (Hitam / Warna)": "Approx. 33 ppm / 15 ppm",
+            "ISO 24734, A4 Simpleks (Hitam / Warna)": "Hingga 10 ipm / 5,0 ipm",
+        },
+        "Copying": {
+            "Resolusi Salin Maksimum": "600 x 600 dpi",
+            "ISO 29183, A4, Simpleks (Hitam / Warna)": "Up to 7.7 ipm / 3.8 ipm",
+        },
+        "Scan Function": {
+            "Resolusi Optik": "1,200 x 2,400 dpi",
+            "Kecepatan Pindai (Flatbed 200 dpi)": "Monochrome: 11 sec / Colour: 28 sec",
+        },
+        "Interface": {
+            "USB": "USB 2.0",
+            "Jaringan": "Wi-Fi, Wi-Fi Direct",
+        },
+        "Mobile and Cloud Solutions": {
+            "Fitur Epson Connect": "Epson iPrint, Epson Email Print, Remote Print Driver, Epson Smart Panel",
+        },
+        "Consumables - Updated": {
+            "Ink Model": "003 (CMYK) — TKDN+BMP: Bk 39,21% · C 27,45% · M 38,70% · Y 36,06%",
+            "Garansi": "2 years or 30,000 pages (+1 year with MyEpson Portal)",
+            "Total Nilai TKDN + BMP": "75,28%",
+        },
+    },
+}
 # Variants without specs on the site inherit specs from their base model.
 INHERIT = {"L3211": "L3210", "L3251": "L3250"}
 
@@ -103,7 +175,8 @@ def main():
     out = []
     for p in data:
         model = model_of(p["name"])
-        specs = p["specs"] or by_model.get(INHERIT.get(model, ""), {}).get("specs", {})
+        base_specs = p["specs"] or by_model.get(INHERIT.get(model, ""), {}).get("specs", {})
+        specs = {**base_specs, **TKDN_SPECS.get(model, {})} if model in TKDN_SPECS else base_specs
         cat, tagline, ink = CURATED[model]
         cats = set(specs)
         ptype = find(specs, r"Tipe Printer").lower()
@@ -128,6 +201,11 @@ def main():
                     print("img fail", model, e); img_file = ""
         # strip noisy/irrelevant categories for display
         clean_specs = {}
+        if model in TKDN:
+            clean_specs["Sertifikasi TKDN (FY25)"] = {
+                "Total Nilai TKDN + BMP": TKDN[model],
+                "Referensi": "Katalog Produk Epson TKDN FY25",
+            }
         for c, kv in specs.items():
             if c.startswith("_"): continue
             if model in ("L6460", "L6490") and "Consumables" in c:
@@ -146,6 +224,7 @@ def main():
             "ink": ink,
             "isNew": model in NEW_2026,
             "tkdn": model in TKDN,
+            "tkdnScore": TKDN.get(model, ""),
             "color": cat != "mono",
             "format": fmt,
             "functions": funcs,
@@ -159,7 +238,7 @@ def main():
             "lcd": find(specs, r"LCD"),
             "dimensions": find(specs, r"Dimensi"),
             "weight": find(specs, r"^Berat"),
-            "inherited": model in INHERIT,
+            "inherited": model in INHERIT and model not in TKDN_SPECS,
             "specs": clean_specs,
         })
     order = ["print", "aio", "office", "a3", "photo", "mono", "portable"]

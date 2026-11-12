@@ -45,8 +45,8 @@
     { id: "new", label: "Baru 2026", test: (p) => p.isNew },
   ];
   const INK_INFO = {
-    "664": { type: "Dye 4 warna", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"] },
-    "003": { type: "Dye 4 warna · botol anti tumpah", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"] },
+    "664": { type: "Dye 4 warna · TKDN+BMP: Bk 35,13% · C 35,84% · M 38,28% · Y 35,37%", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"] },
+    "003": { type: "Dye 4 warna anti tumpah · TKDN+BMP: Bk 39,21% · C 27,45% · M 38,70% · Y 36,06%", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"] },
     "001": { type: "Hitam pigmen + warna dye", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"] },
     "008": { type: "Pigmen 4 warna (bisnis)", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"] },
     "057": { type: "Dye 6 warna (foto)", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100", "#7fd3f7", "#f7a8d0"] },
@@ -172,7 +172,7 @@
     if (p.wifi) out.push('<span class="pill green">Wi-Fi</span>');
     if (p.duplex) out.push('<span class="pill orange">Duplex</span>');
     if (p.adf) out.push('<span class="pill">ADF</span>');
-    if (p.tkdn) out.push('<span class="pill red">TKDN</span>');
+    if (p.tkdn) out.push(`<span class="pill red">TKDN ${esc(p.tkdnScore || "")}</span>`);
     return out.join("");
   }
   const imgTag = (p, cls = "") => p.image
@@ -197,7 +197,7 @@
     g.className = "grid" + (state.view === "list" ? " list" : "");
     g.innerHTML = list.map((p, i) => `
       <article class="card" style="animation-delay:${Math.min(i, 16) * 25}ms">
-        ${p.isNew ? '<span class="badge-new">Baru</span>' : p.tkdn ? '<span class="badge-new tkdn">TKDN</span>' : ""}
+        ${p.isNew ? '<span class="badge-new">Baru</span>' : p.tkdn ? `<span class="badge-new tkdn">TKDN ${esc(p.tkdnScore || "")}</span>` : ""}
         <button class="cmp-toggle ${state.compare.includes(p.model) ? "on" : ""}" data-cmp="${p.model}" title="Tambah ke perbandingan" aria-label="Bandingkan ${p.model}">
           ${svg(state.compare.includes(p.model) ? "check" : "plus")}</button>
         <button class="card-img" data-open="${p.model}" aria-label="Detail ${esc(p.name)}">${imgTag(p)}</button>
@@ -284,6 +284,7 @@
       ["Konektivitas", [p.wifi && "Wi-Fi", p.ethernet && "Ethernet", "USB"].filter(Boolean).join(" · ")],
       ["Duplex / ADF", `${p.duplex ? "Duplex" : "—"} / ${p.adf ? "ADF" : "—"}`],
       ["Layar", p.lcd || "—"],
+      ["TKDN + BMP", p.tkdn ? p.tkdnScore : "—"],
       ["Berat", p.weight || "—"],
     ];
     const groups = Object.entries(p.specs);
@@ -292,7 +293,7 @@
     const html = `<div class="detail">
       <div class="detail-media">${imgTag(p)}</div>
       <div class="detail-info">
-        <div class="series">${esc(catLabel(p.category))}${p.isNew ? " · Baru 2026" : ""}${p.tkdn ? " · TKDN" : ""}</div>
+        <div class="series">${esc(catLabel(p.category))}${p.isNew ? " · Baru 2026" : ""}${p.tkdn ? ` · TKDN ${esc(p.tkdnScore)}` : ""}</div>
         <h2>${esc(p.name)}</h2>
         <p class="tagline">${esc(p.tagline)}</p>
         <div class="pills">${pills(p)}</div>
@@ -336,7 +337,7 @@
       ["Ethernet", (p) => yn(p.ethernet), true],
       ["Duplex otomatis", (p) => yn(p.duplex), true],
       ["ADF", (p) => yn(p.adf), true],
-      ["TKDN", (p) => yn(p.tkdn), true],
+      ["TKDN + BMP", (p) => p.tkdn ? `<span class="yes">✓ ${esc(p.tkdnScore || "Ya")}</span>` : '<span class="no">—</span>', true],
       ["Layar", (p) => p.lcd || "—"],
       ["Kode tinta", (p) => p.ink],
       ["Dimensi", (p) => p.dimensions || "—"],
