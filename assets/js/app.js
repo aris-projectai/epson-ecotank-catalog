@@ -86,10 +86,24 @@
         <span class="check"></span>${f.label}<span class="count">${P.filter(f.test).length}</span></button></li>`).join("");
     $("#inkList").innerHTML = Object.keys(INK_INFO).map((k) =>
       `<button class="ink-tag ${state.ink === k ? "active" : ""}" data-ink="${k}">${k}</button>`).join("");
-    $("#mobileChips").innerHTML =
-      CATS.map((c) => `<button class="chip ${state.cat === c.id ? "active" : ""}" data-cat="${c.id}">${c.label}</button>`).join("") +
-      FEATURES.slice(0, 5).map((f) => `<button class="chip ${state.features.has(f.id) ? "active" : ""}" data-feat="${f.id}">${f.label}</button>`).join("");
+    $("#mobileChips").innerHTML = `
+      <div class="chip-row"><small class="chip-label">Kategori</small>${CATS.map((c) => `<button class="chip ${state.cat === c.id ? "active" : ""}" data-cat="${c.id}">${c.label}</button>`).join("")}</div>
+      <div class="chip-row"><small class="chip-label">Fitur</small>${FEATURES.map((f) => `<button class="chip ${state.features.has(f.id) ? "active" : ""}" data-feat="${f.id}">${f.label}</button>`).join("")}</div>
+      <div class="chip-row"><small class="chip-label">Tinta</small>${Object.keys(INK_INFO).map((k) => `<button class="chip ${state.ink === k ? "active" : ""}" data-ink="${k}">Tinta ${k}</button>`).join("")}</div>`;
+    const activeCount = (state.cat !== "all" ? 1 : 0) + state.features.size + (state.ink ? 1 : 0);
+    const fb = $("#filterBadge");
+    if (fb) { fb.textContent = activeCount; fb.hidden = activeCount === 0; }
   }
+  const toggleDrawer = (open) => {
+    const sb = $("#sidebar"), bd = $("#drawerBackdrop");
+    const show = open ?? !sb.classList.contains("open");
+    sb.classList.toggle("open", show);
+    if (bd) bd.hidden = !show;
+  };
+  if ($("#drawerBtn")) $("#drawerBtn").onclick = () => toggleDrawer();
+  if ($("#filterBtn")) $("#filterBtn").onclick = () => toggleDrawer();
+  if ($("#drawerClose")) $("#drawerClose").onclick = () => toggleDrawer(false);
+  if ($("#drawerBackdrop")) $("#drawerBackdrop").onclick = () => toggleDrawer(false);
   document.addEventListener("click", (e) => {
     const c = e.target.closest("[data-cat]"); if (c) { state.cat = c.dataset.cat; update(); return; }
     const f = e.target.closest("[data-feat]");
@@ -339,6 +353,7 @@
   document.addEventListener("click", (e) => {
     const o = e.target.closest("[data-open]"); if (o) location.hash = "#/p/" + o.dataset.open;
     const m = e.target.closest("[data-menu]"); if (!m) return;
+    toggleDrawer(false);
     const k = m.dataset.menu;
     if (k === "all") { $("#resetBtn").click(); closeModal(); }
     if (k === "compare") state.compare.length >= 2 ? (location.hash = "#/compare/" + state.compare.join(",")) : toast("Tambahkan minimal 2 printer dengan tombol + pada kartu");

@@ -19,6 +19,9 @@
   <!-- macOS menu bar -->
   <header class="menubar" role="banner">
     <div class="menubar-left">
+      <button class="icon-btn mobile-only" id="drawerBtn" aria-label="Buka menu filter" title="Filter & Kategori">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h10v2H4z"/></svg>
+      </button>
       <span class="logo" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M7 3h10v4H7zM5 8h14a2 2 0 0 1 2 2v6h-4v4H7v-4H3v-6a2 2 0 0 1 2-2zm4 8v2h6v-2zm8-5.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
       </span>
@@ -44,8 +47,20 @@
   <main class="desktop">
     <!-- Main Finder-style window -->
     <section class="window main-window" aria-label="Katalog">
+      <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
       <aside class="sidebar" id="sidebar">
-        <div class="traffic" aria-hidden="true"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+        <div class="sidebar-top">
+          <div class="traffic" aria-hidden="true"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+          <button class="btn small mobile-only" id="drawerClose" aria-label="Tutup filter">Selesai</button>
+        </div>
+        <div class="side-group mobile-only">
+          <h6>Menu</h6>
+          <div class="ink-tags">
+            <button class="ink-tag" data-menu="compare">Bandingkan</button>
+            <button class="ink-tag" data-menu="ink">Panduan Tinta</button>
+            <button class="ink-tag" data-menu="about">Tentang</button>
+          </div>
+        </div>
         <div class="side-group">
           <h6>Kategori</h6>
           <ul id="categoryList"></ul>
@@ -69,6 +84,11 @@
             <span id="paneCount" class="muted"></span>
           </div>
           <div class="toolbar-actions">
+            <button class="btn filter-btn mobile-only" id="filterBtn" aria-label="Filter">
+              <svg viewBox="0 0 24 24"><path d="M3 5h18v2H3zm4 6h10v2H7zm3 6h4v2h-4z"/></svg>
+              <span>Filter</span>
+              <b id="filterBadge" class="filter-badge" hidden>0</b>
+            </button>
             <div class="segmented" role="tablist" aria-label="Tampilan">
               <button class="active" data-view="grid" aria-label="Grid" title="Grid">
                 <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zm9 0h7v7h-7zM4 13h7v7H4zm9 0h7v7h-7z"/></svg>
