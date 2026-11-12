@@ -12,6 +12,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -107,6 +108,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -204,6 +206,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -301,6 +304,7 @@ window.PRODUCTS = [
   "isNew": true,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -383,6 +387,7 @@ window.PRODUCTS = [
   "isNew": true,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -474,6 +479,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -591,6 +597,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": true,
   "tkdnScore": "66,45%",
+  "tkdnCert": "6109/SJ-IND.8/E-TKDN/5/2025",
   "color": true,
   "format": "A4",
   "functions": [
@@ -610,9 +617,12 @@ window.PRODUCTS = [
   "weight": "3.9 kg",
   "inherited": false,
   "specs": {
-   "Sertifikasi TKDN (FY25)": {
-    "Total Nilai TKDN + BMP": "66,45%",
-    "Referensi": "Katalog Produk Epson TKDN FY25"
+   "Sertifikasi TKDN Kemenperin RI": {
+    "Nomor Sertifikat TKDN": "6109/SJ-IND.8/E-TKDN/5/2025",
+    "Kode Produk TKDN": "C11CJ68504",
+    "Nilai TKDN": "52,80%",
+    "Nilai BMP": "13,65%",
+    "Total Nilai TKDN + BMP": "66,45%"
    },
    "Printer Type": {
     "Tipe Printer": "Print, Scan, Copy"
@@ -659,9 +669,10 @@ window.PRODUCTS = [
     "Berat": "3.9 kg"
    },
    "Consumables - Updated": {
-    "Ink Model": "003 (CMYK) — TKDN+BMP: Bk 39,21% · C 27,45% · M 38,70% · Y 36,06%",
+    "Ink Model": "003 (CMYK) — TKDN: Bk 25,65% · C 25,25% · M 25,72% · Y 25,54% (Sertifikat 4000, 4004–4006/SJ-IND.8/TKDN/LVI/05/2026)",
     "Garansi": "2 years or 30,000 pages (+1 year with MyEpson Portal)",
-    "Total Nilai TKDN + BMP": "66,45%"
+    "Nomor Sertifikat TKDN": "6109/SJ-IND.8/E-TKDN/5/2025",
+    "Total Nilai TKDN + BMP": "66,45% (TKDN 52,80% + BMP 13,65%)"
    },
    "Electrical Specifications": {
     "Nilai Tegangan": "AC 220-240 V",
@@ -699,6 +710,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -816,6 +828,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -940,6 +953,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": true,
   "tkdnScore": "75,28%",
+  "tkdnCert": "6109/SJ-IND.8/E-TKDN/5/2025",
   "color": true,
   "format": "A4",
   "functions": [
@@ -959,9 +973,12 @@ window.PRODUCTS = [
   "weight": "3.9 kg",
   "inherited": false,
   "specs": {
-   "Sertifikasi TKDN (FY25)": {
-    "Total Nilai TKDN + BMP": "75,28%",
-    "Referensi": "Katalog Produk Epson TKDN FY25"
+   "Sertifikasi TKDN Kemenperin RI": {
+    "Nomor Sertifikat TKDN": "6109/SJ-IND.8/E-TKDN/5/2025",
+    "Kode Produk TKDN": "C11CJ67506",
+    "Nilai TKDN": "61,63%",
+    "Nilai BMP": "13,65%",
+    "Total Nilai TKDN + BMP": "75,28%"
    },
    "Print-1": {
     "Konfigurasi Nozzle": "180 x 1 Nozzle Hitam, 59 x 1 Nozzle per warna (Cyan, Magenta, Kuning)",
@@ -1030,9 +1047,10 @@ window.PRODUCTS = [
     "Berat": "3.9 kg"
    },
    "Consumables - Updated": {
-    "Ink Model": "003 (CMYK) — TKDN+BMP: Bk 39,21% · C 27,45% · M 38,70% · Y 36,06%",
+    "Ink Model": "003 (CMYK) — TKDN: Bk 25,65% · C 25,25% · M 25,72% · Y 25,54% (Sertifikat 4000, 4004–4006/SJ-IND.8/TKDN/LVI/05/2026)",
     "Garansi": "2 years or 30,000 pages (+1 year with MyEpson Portal)",
-    "Total Nilai TKDN + BMP": "75,28%"
+    "Nomor Sertifikat TKDN": "6109/SJ-IND.8/E-TKDN/5/2025",
+    "Total Nilai TKDN + BMP": "75,28% (TKDN 61,63% + BMP 13,65%)"
    },
    "Interface": {
     "USB": "USB 2.0",
@@ -1052,6 +1070,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1176,6 +1195,7 @@ window.PRODUCTS = [
   "isNew": true,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1276,6 +1296,7 @@ window.PRODUCTS = [
   "isNew": true,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1376,6 +1397,7 @@ window.PRODUCTS = [
   "isNew": true,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1514,6 +1536,7 @@ window.PRODUCTS = [
   "isNew": true,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1622,6 +1645,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1740,6 +1764,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1858,6 +1883,7 @@ window.PRODUCTS = [
   "isNew": true,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -1968,6 +1994,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2116,6 +2143,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2264,6 +2292,7 @@ window.PRODUCTS = [
   "isNew": true,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2433,6 +2462,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2572,6 +2602,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2699,6 +2730,7 @@ window.PRODUCTS = [
   "isNew": true,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2817,6 +2849,7 @@ window.PRODUCTS = [
   "isNew": true,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -2948,6 +2981,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -3083,6 +3117,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -3231,6 +3266,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": true,
   "tkdnScore": "44,29%",
+  "tkdnCert": "720/SJ-IND.8/E-TKDN/3/2024",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3251,9 +3287,12 @@ window.PRODUCTS = [
   "weight": "23kg",
   "inherited": false,
   "specs": {
-   "Sertifikasi TKDN (FY25)": {
-    "Total Nilai TKDN + BMP": "44,29%",
-    "Referensi": "Katalog Produk Epson TKDN FY25"
+   "Sertifikasi TKDN Kemenperin RI": {
+    "Nomor Sertifikat TKDN": "720/SJ-IND.8/E-TKDN/3/2024",
+    "Kode Produk TKDN": "C11CJ30502",
+    "Nilai TKDN": "30,64%",
+    "Nilai BMP": "13,65%",
+    "Total Nilai TKDN + BMP": "44,29%"
    },
    "Printer Type": {
     "Tipe Printer": "Cetak, Pindai, Salin, Faks dengan ADF"
@@ -3408,6 +3447,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": true,
   "tkdnScore": "43,81%",
+  "tkdnCert": "720/SJ-IND.8/E-TKDN/3/2024",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3428,9 +3468,12 @@ window.PRODUCTS = [
   "weight": "23kg",
   "inherited": false,
   "specs": {
-   "Sertifikasi TKDN (FY25)": {
-    "Total Nilai TKDN + BMP": "43,81%",
-    "Referensi": "Katalog Produk Epson TKDN FY25"
+   "Sertifikasi TKDN Kemenperin RI": {
+    "Nomor Sertifikat TKDN": "720/SJ-IND.8/E-TKDN/3/2024",
+    "Kode Produk TKDN": "C11CJ28502",
+    "Nilai TKDN": "30,16%",
+    "Nilai BMP": "13,65%",
+    "Total Nilai TKDN + BMP": "43,81%"
    },
    "Printer Type": {
     "Tipe Printer": "Cetak, Pindai, Salin, Faks dengan ADF"
@@ -3586,6 +3629,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3683,6 +3727,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3831,11 +3876,12 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Home-Office-Printers/Epson-EcoTank-L15150-A3-Wi-Fi-Duplex-All-in-One-Ink-Tank-Printer/p/C11CH72502",
   "image": "assets/img/C11CH72502.jpg",
   "category": "a3",
-  "tagline": "A3 penuh (TKDN 40,18%): cetak, pindai, salin, dan duplex hingga A3.",
+  "tagline": "A3 penuh (TKDN 68,94%): cetak, pindai, salin, dan duplex hingga A3.",
   "ink": "008",
   "isNew": false,
   "tkdn": true,
-  "tkdnScore": "40,18%",
+  "tkdnScore": "68,94%",
+  "tkdnCert": "5391/SJ-IND.8/TKDN/LVI/06/2026",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -3856,9 +3902,12 @@ window.PRODUCTS = [
   "weight": "20.7kg",
   "inherited": false,
   "specs": {
-   "Sertifikasi TKDN (FY25)": {
-    "Total Nilai TKDN + BMP": "40,18%",
-    "Referensi": "Katalog Produk Epson TKDN FY25"
+   "Sertifikasi TKDN Kemenperin RI": {
+    "Nomor Sertifikat TKDN": "5391/SJ-IND.8/TKDN/LVI/06/2026",
+    "Kode Produk TKDN": "C11CH72502",
+    "Nilai TKDN": "55,29%",
+    "Nilai BMP": "13,65%",
+    "Total Nilai TKDN + BMP": "68,94%"
    },
    "Printer Type": {
     "Tipe Printer": "Print, Scan, Copy, Fax with ADF"
@@ -3979,11 +4028,12 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Work-Colour-Ink-Tank-Printers/Printer-Ink-Tank-All-in-One-Dupleks-Wi-Fi-A3-Epson-EcoTank-L15160/p/C11CH71501",
   "image": "assets/img/C11CH71501.jpg",
   "category": "a3",
-  "tagline": "A3 penuh (TKDN 41,27%) dengan kecepatan hingga 25 ipm.",
+  "tagline": "A3 penuh (TKDN 67,05%) dengan kecepatan hingga 25 ipm.",
   "ink": "008",
   "isNew": false,
   "tkdn": true,
-  "tkdnScore": "41,27%",
+  "tkdnScore": "67,05%",
+  "tkdnCert": "6581/SJ-IND.8/TKDN/LVI/06/2026",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -4004,9 +4054,12 @@ window.PRODUCTS = [
   "weight": "21.0kg",
   "inherited": false,
   "specs": {
-   "Sertifikasi TKDN (FY25)": {
-    "Total Nilai TKDN + BMP": "41,27%",
-    "Referensi": "Katalog Produk Epson TKDN FY25"
+   "Sertifikasi TKDN Kemenperin RI": {
+    "Nomor Sertifikat TKDN": "6581/SJ-IND.8/TKDN/LVI/06/2026",
+    "Kode Produk TKDN": "C11CH71501",
+    "Nilai TKDN": "53,40%",
+    "Nilai BMP": "13,65%",
+    "Total Nilai TKDN + BMP": "67,05%"
    },
    "Printer Type": {
     "Tipe Printer": "Print, Scan, Copy, Fax with ADF"
@@ -4129,11 +4182,12 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Work-Colour-Ink-Tank-Printers/Printer-Epson-EcoTank-L15180-A3-Wi-Fi-Duplex-Multi-Function-Ink-Tank/p/C11CH71506",
   "image": "assets/img/C11CH71506.jpg",
   "category": "a3",
-  "tagline": "A3 penuh (TKDN 41,08%) dengan layar sentuh 4,3\" & Smart Panel.",
+  "tagline": "A3 penuh (TKDN 67,02%) dengan layar sentuh 4,3\" & Smart Panel.",
   "ink": "008",
   "isNew": false,
   "tkdn": true,
-  "tkdnScore": "41,08%",
+  "tkdnScore": "67,02%",
+  "tkdnCert": "6580/SJ-IND.8/TKDN/LVI/06/2026",
   "color": true,
   "format": "A4",
   "functions": [
@@ -4154,9 +4208,12 @@ window.PRODUCTS = [
   "weight": "21.0 kg",
   "inherited": false,
   "specs": {
-   "Sertifikasi TKDN (FY25)": {
-    "Total Nilai TKDN + BMP": "41,08%",
-    "Referensi": "Katalog Produk Epson TKDN FY25"
+   "Sertifikasi TKDN Kemenperin RI": {
+    "Nomor Sertifikat TKDN": "6580/SJ-IND.8/TKDN/LVI/06/2026",
+    "Kode Produk TKDN": "C11CH71506",
+    "Nilai TKDN": "53,37%",
+    "Nilai BMP": "13,65%",
+    "Total Nilai TKDN + BMP": "67,02%"
    },
    "Printer Type": {
     "Tipe Printer": "Print, Scan, Copy and Fax with ADF"
@@ -4301,6 +4358,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -4394,6 +4452,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [
@@ -4511,6 +4570,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A3+",
   "functions": [
@@ -4608,6 +4668,7 @@ window.PRODUCTS = [
   "isNew": true,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -4697,6 +4758,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -4770,6 +4832,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -4853,6 +4916,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -4925,6 +4989,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -5042,6 +5107,7 @@ window.PRODUCTS = [
   "isNew": true,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -5157,6 +5223,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -5256,6 +5323,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -5377,6 +5445,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": false,
   "format": "A4",
   "functions": [
@@ -5493,11 +5562,12 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System-Printers/Epson-EcoTank-Monochrome-M15140-A3-Wi-Fi-Duplex-All-in-One-Ink-Tank-Printer/p/C11CJ41501",
   "image": "assets/img/C11CJ41501.jpg",
   "category": "mono",
-  "tagline": "Mono A3 (TKDN 50,66%) hingga 32 ppm dengan duplex A3.",
+  "tagline": "Mono A3 (TKDN 69,82%) hingga 32 ppm dengan duplex A3.",
   "ink": "005",
   "isNew": false,
   "tkdn": true,
-  "tkdnScore": "50,66%",
+  "tkdnScore": "69,82%",
+  "tkdnCert": "6579/SJ-IND.8/TKDN/LVI/06/2026",
   "color": false,
   "format": "A4",
   "functions": [
@@ -5518,9 +5588,12 @@ window.PRODUCTS = [
   "weight": "20.2 kg",
   "inherited": false,
   "specs": {
-   "Sertifikasi TKDN (FY25)": {
-    "Total Nilai TKDN + BMP": "50,66%",
-    "Referensi": "Katalog Produk Epson TKDN FY25"
+   "Sertifikasi TKDN Kemenperin RI": {
+    "Nomor Sertifikat TKDN": "6579/SJ-IND.8/TKDN/LVI/06/2026",
+    "Kode Produk TKDN": "C11CJ41501",
+    "Nilai TKDN": "56,17%",
+    "Nilai BMP": "13,65%",
+    "Total Nilai TKDN + BMP": "69,82%"
    },
    "Printer Type": {
     "Tipe Printer": "Cetak, Pindai, Salin, Faks dengan ADF"
@@ -5653,11 +5726,12 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Work-Colour-Ink-Tank-Printers/Printer-Epson-EcoTank-Monochrome-M15180-A3-Wi-Fi-Duplex-Multi-Function-Ink-Tank/p/C11CJ41506",
   "image": "assets/img/C11CJ41506.jpg",
   "category": "mono",
-  "tagline": "Mono A3 kelas bisnis (TKDN 47,77%) dengan layar sentuh 4,3\".",
+  "tagline": "Mono A3 kelas bisnis (TKDN 69,82%) dengan layar sentuh 4,3\".",
   "ink": "005",
   "isNew": false,
   "tkdn": true,
-  "tkdnScore": "47,77%",
+  "tkdnScore": "69,82%",
+  "tkdnCert": "6576/SJ-IND.8/TKDN/LVI/06/2026",
   "color": false,
   "format": "A3+",
   "functions": [
@@ -5678,9 +5752,12 @@ window.PRODUCTS = [
   "weight": "23kg",
   "inherited": false,
   "specs": {
-   "Sertifikasi TKDN (FY25)": {
-    "Total Nilai TKDN + BMP": "47,77%",
-    "Referensi": "Katalog Produk Epson TKDN FY25"
+   "Sertifikasi TKDN Kemenperin RI": {
+    "Nomor Sertifikat TKDN": "6576/SJ-IND.8/TKDN/LVI/06/2026",
+    "Kode Produk TKDN": "C11CJ41506",
+    "Nilai TKDN": "56,17%",
+    "Nilai BMP": "13,65%",
+    "Total Nilai TKDN + BMP": "69,82%"
    },
    "Printer Type": {
     "Tipe Printer": "Cetak, Pindai, Salin, Faks dengan ADF"
@@ -5836,6 +5913,7 @@ window.PRODUCTS = [
   "isNew": false,
   "tkdn": false,
   "tkdnScore": "",
+  "tkdnCert": "",
   "color": true,
   "format": "A4",
   "functions": [

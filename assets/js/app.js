@@ -45,8 +45,14 @@
     { id: "new", label: "Baru 2026", test: (p) => p.isNew },
   ];
   const INK_INFO = {
-    "664": { type: "Dye 4 warna · TKDN+BMP: Bk 35,13% · C 35,84% · M 38,28% · Y 35,37%", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"] },
-    "003": { type: "Dye 4 warna anti tumpah · TKDN+BMP: Bk 39,21% · C 27,45% · M 38,70% · Y 36,06%", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"] },
+    "664": {
+      type: "Dye 4 warna · TKDN Bk 25,23% (3999/..05/2026) · C 25,25% (4003) · M 25,27% (4001) · Y 25,20% (4002)",
+      colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"],
+    },
+    "003": {
+      type: "Dye 4 warna anti tumpah · TKDN Bk 25,65% (4000/..05/2026) · C 25,25% (4004) · M 25,72% (4005) · Y 25,54% (4006)",
+      colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"],
+    },
     "001": { type: "Hitam pigmen + warna dye", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"] },
     "008": { type: "Pigmen 4 warna (bisnis)", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100"] },
     "057": { type: "Dye 6 warna (foto)", colors: ["#111", "#00a0e9", "#e4007f", "#ffe100", "#7fd3f7", "#f7a8d0"] },
@@ -148,7 +154,8 @@
 
   /* ---------- Filtering ---------- */
   const haystack = (p) => [p.model, p.name, p.tagline, p.sku, p.ink, catLabel(p.category), p.functions.join(" "),
-    p.wifi && "wifi wi-fi wireless", p.duplex && "duplex 2 sisi", p.adf && "adf", p.format, p.tkdn && "tkdn", p.isNew && "baru new 2026"].join(" ").toLowerCase();
+    p.wifi && "wifi wi-fi wireless", p.duplex && "duplex 2 sisi", p.adf && "adf", p.format,
+    p.tkdn && `tkdn ${p.tkdnScore} ${p.tkdnCert}`, p.isNew && "baru new 2026"].join(" ").toLowerCase();
   function filtered() {
     const q = state.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
     let list = P.filter((p) =>
@@ -285,6 +292,7 @@
       ["Duplex / ADF", `${p.duplex ? "Duplex" : "—"} / ${p.adf ? "ADF" : "—"}`],
       ["Layar", p.lcd || "—"],
       ["TKDN + BMP", p.tkdn ? p.tkdnScore : "—"],
+      ...(p.tkdnCert ? [["No. Sertifikat TKDN", p.tkdnCert]] : []),
       ["Berat", p.weight || "—"],
     ];
     const groups = Object.entries(p.specs);
@@ -338,6 +346,7 @@
       ["Duplex otomatis", (p) => yn(p.duplex), true],
       ["ADF", (p) => yn(p.adf), true],
       ["TKDN + BMP", (p) => p.tkdn ? `<span class="yes">✓ ${esc(p.tkdnScore || "Ya")}</span>` : '<span class="no">—</span>', true],
+      ["No. Sertifikat TKDN", (p) => p.tkdnCert || "—"],
       ["Layar", (p) => p.lcd || "—"],
       ["Kode tinta", (p) => p.ink],
       ["Dimensi", (p) => p.dimensions || "—"],

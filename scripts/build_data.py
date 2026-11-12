@@ -44,9 +44,9 @@ CURATED = {
     "L14150": ("a3", "All-in-One A3+ dengan duplex, ADF, faks, dan Ethernet.", "001"),
     "L6550":  ("a3", "Bisnis A3 (TKDN 44,29%), tinta pigmen, 2 kaset kertas 250 lembar.", "008"),
     "L6580":  ("a3", "Bisnis A3 berkinerja tinggi (TKDN 43,81%) dengan tinta pigmen.", "008"),
-    "L15150": ("a3", "A3 penuh (TKDN 40,18%): cetak, pindai, salin, dan duplex hingga A3.", "008"),
-    "L15160": ("a3", "A3 penuh (TKDN 41,27%) dengan kecepatan hingga 25 ipm.", "008"),
-    "L15180": ("a3", "A3 penuh (TKDN 41,08%) dengan layar sentuh 4,3\" & Smart Panel.", "008"),
+    "L15150": ("a3", "A3 penuh (TKDN 68,94%): cetak, pindai, salin, dan duplex hingga A3.", "008"),
+    "L15160": ("a3", "A3 penuh (TKDN 67,05%) dengan kecepatan hingga 25 ipm.", "008"),
+    "L15180": ("a3", "A3 penuh (TKDN 67,02%) dengan layar sentuh 4,3\" & Smart Panel.", "008"),
     "L8050":  ("photo", "Printer foto 6 warna A4 dengan tetesan 1,5 pl.", "057"),
     "L18050": ("photo", "Printer foto 6 warna A3+ untuk kreator dan studio.", "057"),
     "L8100":  ("photo", "All-in-One foto 6 warna dengan layar 2,4\".", "057"),
@@ -59,22 +59,22 @@ CURATED = {
     "M2140":  ("mono", "Mono All-in-One dengan duplex otomatis.", "005"),
     "M2170":  ("mono", "Mono All-in-One dengan ADF, faks, dan duplex.", "005"),
     "M3170":  ("mono", "Mono All-in-One dengan layar sentuh 2,4\", ADF, dan faks.", "005"),
-    "M15140": ("mono", "Mono A3 (TKDN 50,66%) hingga 32 ppm dengan duplex A3.", "005"),
-    "M15180": ("mono", "Mono A3 kelas bisnis (TKDN 47,77%) dengan layar sentuh 4,3\".", "005"),
+    "M15140": ("mono", "Mono A3 (TKDN 69,82%) hingga 32 ppm dengan duplex A3.", "005"),
+    "M15180": ("mono", "Mono A3 kelas bisnis (TKDN 69,82%) dengan layar sentuh 4,3\".", "005"),
     "WF-100": ("portable", "Printer portabel dengan baterai, hanya 1,6 kg.", "T289/T290"),
 }
 NEW_2026 = {"L1310", "L1350", "L3311", "L3316", "L3351", "L3356", "L4360", "L5391", "L6370", "L6390", "M1050", "M2050"}
-# Nilai TKDN + BMP berdasarkan Katalog Produk Epson TKDN FY25
+# Data resmi TKDN Epson (Valid efektif per 28 Agustus 2026): model -> (kode, nilai_tkdn, nilai_bmp, total, no_sertifikat)
 TKDN = {
-    "L3211": "66,45%",
-    "L3251": "75,28%",
-    "L15150": "40,18%",
-    "L15160": "41,27%",
-    "L15180": "41,08%",
-    "M15140": "50,66%",
-    "M15180": "47,77%",
-    "L6550": "44,29%",
-    "L6580": "43,81%",
+    "L3211":  ("C11CJ68504", "52,80%", "13,65%", "66,45%", "6109/SJ-IND.8/E-TKDN/5/2025"),
+    "L3251":  ("C11CJ67506", "61,63%", "13,65%", "75,28%", "6109/SJ-IND.8/E-TKDN/5/2025"),
+    "L15150": ("C11CH72502", "55,29%", "13,65%", "68,94%", "5391/SJ-IND.8/TKDN/LVI/06/2026"),
+    "L15160": ("C11CH71501", "53,40%", "13,65%", "67,05%", "6581/SJ-IND.8/TKDN/LVI/06/2026"),
+    "L15180": ("C11CH71506", "53,37%", "13,65%", "67,02%", "6580/SJ-IND.8/TKDN/LVI/06/2026"),
+    "M15140": ("C11CJ41501", "56,17%", "13,65%", "69,82%", "6579/SJ-IND.8/TKDN/LVI/06/2026"),
+    "M15180": ("C11CJ41506", "56,17%", "13,65%", "69,82%", "6576/SJ-IND.8/TKDN/LVI/06/2026"),
+    "L6550":  ("C11CJ30502", "30,64%", "13,65%", "44,29%", "720/SJ-IND.8/E-TKDN/3/2024"),
+    "L6580":  ("C11CJ28502", "30,16%", "13,65%", "43,81%", "720/SJ-IND.8/E-TKDN/3/2024"),
 }
 # Spesifikasi resmi L3211 & L3251 dari Katalog Produk Epson TKDN FY25 (hal. 4)
 TKDN_SPECS = {
@@ -99,9 +99,10 @@ TKDN_SPECS = {
         },
         "Interface": {"USB": "USB 2.0 Hi-speed"},
         "Consumables - Updated": {
-            "Ink Model": "003 (CMYK) — TKDN+BMP: Bk 39,21% · C 27,45% · M 38,70% · Y 36,06%",
+            "Ink Model": "003 (CMYK) — TKDN: Bk 25,65% · C 25,25% · M 25,72% · Y 25,54% (Sertifikat 4000, 4004–4006/SJ-IND.8/TKDN/LVI/05/2026)",
             "Garansi": "2 years or 30,000 pages (+1 year with MyEpson Portal)",
-            "Total Nilai TKDN + BMP": "66,45%",
+            "Nomor Sertifikat TKDN": "6109/SJ-IND.8/E-TKDN/5/2025",
+            "Total Nilai TKDN + BMP": "66,45% (TKDN 52,80% + BMP 13,65%)",
         },
     },
     "L3251": {
@@ -131,9 +132,10 @@ TKDN_SPECS = {
             "Fitur Epson Connect": "Epson iPrint, Epson Email Print, Remote Print Driver, Epson Smart Panel",
         },
         "Consumables - Updated": {
-            "Ink Model": "003 (CMYK) — TKDN+BMP: Bk 39,21% · C 27,45% · M 38,70% · Y 36,06%",
+            "Ink Model": "003 (CMYK) — TKDN: Bk 25,65% · C 25,25% · M 25,72% · Y 25,54% (Sertifikat 4000, 4004–4006/SJ-IND.8/TKDN/LVI/05/2026)",
             "Garansi": "2 years or 30,000 pages (+1 year with MyEpson Portal)",
-            "Total Nilai TKDN + BMP": "75,28%",
+            "Nomor Sertifikat TKDN": "6109/SJ-IND.8/E-TKDN/5/2025",
+            "Total Nilai TKDN + BMP": "75,28% (TKDN 61,63% + BMP 13,65%)",
         },
     },
 }
@@ -202,9 +204,13 @@ def main():
         # strip noisy/irrelevant categories for display
         clean_specs = {}
         if model in TKDN:
-            clean_specs["Sertifikasi TKDN (FY25)"] = {
-                "Total Nilai TKDN + BMP": TKDN[model],
-                "Referensi": "Katalog Produk Epson TKDN FY25",
+            tk_code, tk_val, tk_bmp, tk_tot, tk_cert = TKDN[model]
+            clean_specs["Sertifikasi TKDN Kemenperin RI"] = {
+                "Nomor Sertifikat TKDN": tk_cert,
+                "Kode Produk TKDN": tk_code,
+                "Nilai TKDN": tk_val,
+                "Nilai BMP": tk_bmp,
+                "Total Nilai TKDN + BMP": tk_tot,
             }
         for c, kv in specs.items():
             if c.startswith("_"): continue
@@ -224,7 +230,8 @@ def main():
             "ink": ink,
             "isNew": model in NEW_2026,
             "tkdn": model in TKDN,
-            "tkdnScore": TKDN.get(model, ""),
+            "tkdnScore": TKDN[model][3] if model in TKDN else "",
+            "tkdnCert": TKDN[model][4] if model in TKDN else "",
             "color": cat != "mono",
             "format": fmt,
             "functions": funcs,
