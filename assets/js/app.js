@@ -23,7 +23,7 @@
   const svg = (k) => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICON[k]}</svg>`;
 
   const CATS = [
-    { id: "all", label: "Semua Printer", desc: "Seluruh lini printer Ink Tank Epson Indonesia — hemat, bebas repot isi ulang, hasil tajam." },
+    { id: "all", label: "Semua Printer", desc: "Seluruh lini printer Ink Tank Epson — hemat, bebas repot isi ulang, hasil tajam." },
     { id: "print", label: "Warna · Cetak Saja", desc: "Printer warna single-function untuk kebutuhan cetak harian di rumah." },
     { id: "aio", label: "All-in-One", desc: "Cetak, pindai dan salin dalam satu perangkat ringkas." },
     { id: "office", label: "Kantor Kecil", desc: "ADF, faks, duplex dan jaringan untuk UMKM dan home office." },

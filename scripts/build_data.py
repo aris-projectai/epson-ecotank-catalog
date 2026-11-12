@@ -1,4 +1,4 @@
-"""Build assets/data/products.js from scraped Epson Indonesia data.
+"""Build assets/data/products.js from scraped Epson data.
 
 Usage: python scripts/build_data.py <products.json> <listing1.html> [<listing2.html> ...]
 Downloads product images into assets/img/ and writes assets/data/products.js.

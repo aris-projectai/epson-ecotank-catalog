@@ -1,6 +1,6 @@
 # Katalog Digital Epson EcoTank
 
-Katalog statis bergaya macOS untuk **46 printer Ink Tank Epson Indonesia**. Data diambil dari
+Katalog statis bergaya macOS untuk **46 printer Ink Tank Epson**. Data diambil dari
 [epson.co.id › Ink Tank](https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/c/ink-tank).
 
 ## Fitur
