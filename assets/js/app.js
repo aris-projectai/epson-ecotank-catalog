@@ -76,6 +76,7 @@
   tick(); setInterval(tick, 15000);
 
   /* ---------- Sidebar ---------- */
+  const CAT_SHORT = { all: "Semua", print: "Cetak Saja", aio: "All-in-One", office: "Kantor", a3: "A3 / A3+", photo: "Foto", mono: "Mono", portable: "Portabel" };
   function renderSidebar() {
     $("#categoryList").innerHTML = CATS.map((c) => {
       const n = c.id === "all" ? P.length : P.filter((p) => p.category === c.id).length;
@@ -86,13 +87,24 @@
         <span class="check"></span>${f.label}<span class="count">${P.filter(f.test).length}</span></button></li>`).join("");
     $("#inkList").innerHTML = Object.keys(INK_INFO).map((k) =>
       `<button class="ink-tag ${state.ink === k ? "active" : ""}" data-ink="${k}">${k}</button>`).join("");
-    $("#mobileChips").innerHTML = `
-      <div class="chip-row"><small class="chip-label">Kategori</small>${CATS.map((c) => `<button class="chip ${state.cat === c.id ? "active" : ""}" data-cat="${c.id}">${c.label}</button>`).join("")}</div>
-      <div class="chip-row"><small class="chip-label">Fitur</small>${FEATURES.map((f) => `<button class="chip ${state.features.has(f.id) ? "active" : ""}" data-feat="${f.id}">${f.label}</button>`).join("")}</div>
-      <div class="chip-row"><small class="chip-label">Tinta</small>${Object.keys(INK_INFO).map((k) => `<button class="chip ${state.ink === k ? "active" : ""}" data-ink="${k}">Tinta ${k}</button>`).join("")}</div>`;
-    const activeCount = (state.cat !== "all" ? 1 : 0) + state.features.size + (state.ink ? 1 : 0);
-    const fb = $("#filterBadge");
+    if ($("#chapterNav")) {
+      $("#chapterNav").innerHTML = CATS.map((c) =>
+        `<button class="chapter-item ${state.cat === c.id ? "active" : ""}" data-cat="${c.id}">
+          <span class="chapter-ico">${svg(c.id)}</span>
+          <span class="chapter-lbl">${CAT_SHORT[c.id] || c.label}</span>
+        </button>`).join("");
+    }
+    const tags = [
+      ...[...state.features].map((id) => `<button class="af-chip" data-feat="${id}">${FEATURES.find((f) => f.id === id).label} ×</button>`),
+      ...(state.ink ? [`<button class="af-chip" data-ink="${state.ink}">Tinta ${state.ink} ×</button>`] : []),
+    ];
+    const af = $("#activeFilters");
+    if (af) { af.innerHTML = tags.join(""); af.hidden = !tags.length; }
+    const activeCount = state.features.size + (state.ink ? 1 : 0);
+    const fb = $("#filterBadge"), fp = $("#filterBtn");
     if (fb) { fb.textContent = activeCount; fb.hidden = activeCount === 0; }
+    if (fp) fp.classList.toggle("active", activeCount > 0);
+    if ($("#sheetApply")) $("#sheetApply").textContent = `Tampilkan ${filtered().length} printer`;
   }
   const toggleDrawer = (open) => {
     const sb = $("#sidebar"), bd = $("#drawerBackdrop");
@@ -100,9 +112,10 @@
     sb.classList.toggle("open", show);
     if (bd) bd.hidden = !show;
   };
-  if ($("#drawerBtn")) $("#drawerBtn").onclick = () => toggleDrawer();
   if ($("#filterBtn")) $("#filterBtn").onclick = () => toggleDrawer();
   if ($("#drawerClose")) $("#drawerClose").onclick = () => toggleDrawer(false);
+  if ($("#sheetApply")) $("#sheetApply").onclick = () => toggleDrawer(false);
+  if ($("#sheetReset")) $("#sheetReset").onclick = () => { state.cat = "all"; state.ink = null; state.features.clear(); update(); };
   if ($("#drawerBackdrop")) $("#drawerBackdrop").onclick = () => toggleDrawer(false);
   document.addEventListener("click", (e) => {
     const c = e.target.closest("[data-cat]"); if (c) { state.cat = c.dataset.cat; update(); return; }
