@@ -25,11 +25,11 @@
   const CATS = [
     { id: "all", label: "Semua Printer", desc: "Seluruh lini printer Ink Tank Epson Indonesia — hemat, bebas repot isi ulang, hasil tajam." },
     { id: "print", label: "Warna · Cetak Saja", desc: "Printer warna single-function untuk kebutuhan cetak harian di rumah." },
-    { id: "aio", label: "All-in-One", desc: "Cetak, pindai, dan salin dalam satu perangkat ringkas." },
-    { id: "office", label: "Kantor Kecil", desc: "ADF, faks, duplex, dan jaringan untuk UMKM dan home office." },
-    { id: "a3", label: "Format A3 / A3+", desc: "Cetak dokumen, poster, dan gambar teknik hingga A3+." },
-    { id: "photo", label: "Foto", desc: "Printer foto 6 warna untuk kreator, fotografer, dan studio." },
-    { id: "mono", label: "Monokrom", desc: "Khusus hitam-putih: cepat, tajam, dan biaya per halaman sangat rendah." },
+    { id: "aio", label: "All-in-One", desc: "Cetak, pindai dan salin dalam satu perangkat ringkas." },
+    { id: "office", label: "Kantor Kecil", desc: "ADF, faks, duplex dan jaringan untuk UMKM dan home office." },
+    { id: "a3", label: "Format A3 / A3+", desc: "Cetak dokumen, poster dan gambar teknik hingga A3+." },
+    { id: "photo", label: "Foto", desc: "Printer foto 6 warna untuk kreator, fotografer dan studio." },
+    { id: "mono", label: "Monokrom", desc: "Khusus hitam-putih: cepat, tajam dan biaya per halaman sangat rendah." },
     { id: "portable", label: "Portabel", desc: "Printer ringkas bertenaga baterai untuk mobilitas." },
   ];
   const FEATURES = [
@@ -390,7 +390,7 @@
       <h4>Pintasan keyboard</h4>
       <ul><li><b>⌘K / Ctrl+K</b> atau <b>/</b> — Spotlight</li><li><b>Esc</b> — tutup jendela</li></ul>
       <p class="note">Harga tidak tersedia di situs resmi. Spesifikasi dapat berubah sewaktu-waktu; selalu verifikasi di situs resmi Epson.
-      Epson, EcoTank, dan gambar produk adalah merek/hak milik Seiko Epson Corporation. Situs ini tidak berafiliasi dengan Epson.</p>
+      Epson, EcoTank dan gambar produk adalah merek/hak milik Seiko Epson Corporation. Situs ini tidak berafiliasi dengan Epson.</p>
     </div>`, "about");
   }
 

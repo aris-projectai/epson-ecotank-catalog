@@ -97,111 +97,13 @@ window.PRODUCTS = [
   }
  },
  {
-  "model": "L1250",
-  "name": "Epson EcoTank L1250",
-  "sku": "C11CJ71503",
-  "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Home-Office-Printers/Printer-Epson-EcoTank-L1250-A4-Wi-Fi-Ink-Tank/p/C11CJ71503",
-  "image": "assets/img/C11CJ71503.jpg",
-  "category": "print",
-  "tagline": "Cetak warna dengan Wi-Fi dan Wi-Fi Direct, langsung dari smartphone.",
-  "ink": "003",
-  "isNew": false,
-  "tkdn": false,
-  "tkdnScore": "",
-  "tkdnCert": "",
-  "color": true,
-  "format": "A4",
-  "functions": [
-   "Print"
-  ],
-  "wifi": true,
-  "ethernet": false,
-  "duplex": false,
-  "adf": false,
-  "resolution": "5760 x 1440 dpi",
-  "speedIso": "Hingga 10 ipm/5,0 ipm",
-  "speedDraft": "Hingga 33 ppm/15 ppm",
-  "lcd": "",
-  "dimensions": "375 x 347 x 169 mm",
-  "weight": "2.7 kg",
-  "inherited": false,
-  "specs": {
-   "Paper Handling": {
-    "Metode Umpan Kertas": "Umpan gesekan",
-    "Jumlah Baki Kertas": "1",
-    "Kapasitas Input Kertas Standar": "Hingga 20 lembar-Kertas Foto Glossy Premium, 10 lembar-Amplop, 30 lembar-Kartu Pos Hingga 100 lembar-A4/Letter Kertas Polos (80 g/m)",
-    "Kapasitas Output": "20 lembar Kertas Foto Glossy Premium 30 lembar Kertas Polos A4",
-    "Ukuran Kertas": "Legal (8.5 x 14\"), Indian-Legal (215 x 345 mm), 8.5 x 13\", Letter, A4, 16K (195 x 270 mm), B5, A5, B6, A6, Hagaki (100 x 148 mm), 5 x 7\", 5 x 8\", 4 x 6\", Envelopes: #10, DL, C6",
-    "Ukuran Kertas Maksimum": "215.9 x 1200 mm",
-    "Margin Cetak": "0 mm atas, kiri, kanan, Bawah melalui pengaturan khusus pada Driver printer"
-   },
-   "Mobile and Cloud Solutions": {
-    "Fitur Epson Connect": "Epson iPrint, Epson Email Print, Remote Print Driver",
-    "Solusi Mobile Lainnya": "Epson Smart Panel"
-   },
-   "Supported OS and Applications": {
-    "Kompatibilitas Sistem Operasi": "Windows XP / XP Professional / Vista / 7 / 8 / 8.1 / 10 Windows Server 2003 / 2008 / 2012 / 2016 / 2019 Only printing functions are supported for Windows Server OS Mac OS X 10.6.8 or later"
-   },
-   "Electrical Specifications": {
-    "Nilai Tegangan": "AC 220-240 V",
-    "Nilai Frekuensi": "50-60 Hz",
-    "Operasi": "12.0 W",
-    "Mode Tidur": "0.7 W",
-    "Daya Mati": "0.2 W",
-    "Siaga": "3.0 W"
-   },
-   "Printer Software": {
-    "Kompatibilitas Sistem Operasi": "Windows Server 2003 / 2008 / 2012 / 2016 Windows XP / Vista / 7 / 8 / 8.1 / 10 Mac OS X 10.6.8 atau lebih baru Hanya fungsi pencetakan yang didukung untuk Sistem Operasi Windows Server"
-   },
-   "Printer Type": {
-    "Tipe Printer": "Cetak"
-   },
-   "Printing Technology": {
-    "Metode Cetak": "On-demand inkjet (Piezoelectric)",
-    "Bahasa Printer": "ESC / P-R",
-    "Arah Cetak": "Pencetakan Dua Arah",
-    "Konfigurasi Nozzle": "180 Nozzle Hitam, 59 Nozzle per warna (Cyan, Magenta, Kuning)",
-    "Resolusi Maksimum": "5760 x 1440 dpi (dengan Teknologi Tetesan dengan Variasi Ukuran)",
-    "Volume Tetesan Tinta Minimum": "3 pl",
-    "Pencetakan Otomatis 2 Sisi": "Tidak"
-   },
-   "Print Speed": {
-    "Default Foto - 10 x 15 cm / 4 x 6 \"": "Sekitar 69 detik per Foto (Tepi)/90 detik per Foto (Tanpa Tepi)",
-    "Draf, A4 (Hitam / Warna)": "Hingga 33 ppm/15 ppm",
-    "ISO 24734, A4 Simpleks (Hitam / Warna)": "Hingga 10 ipm/5,0 ipm",
-    "Waktu Keluar Halaman Pertama Dari Mode Siap (Hitam / Warna)": "Sekitar 10 detik/16 detik"
-   },
-   "Noise Level": {
-    "Pencetakan PC / Default Kertas Polos": "Level Tekanan Suara (Hitam/warna): 53 dB(A)/51 dB(A) LeVel Kekuatan Suara (Hitam/warna): 6,6 B(A)/6,3 B(A)",
-    "Pencetakan PC / Foto Terbaik Kertas Foto Glossy Premium": "Level Tekanan Suara (Hitam/warna): 40 dB(A) LeVel Kekuatan Suara (Hitam/warna): 5,3 B(A)",
-    "Pencetakan PC / Default Kertas Polos ": "Level Tekanan Suara (Hitam/warna): 53 dB(A)/51 dB(A)"
-   },
-   "Dimensions and Weight": {
-    "Dimensi Keseluruhan (L x D x T)": "375 x 347 x 169 mm",
-    "Berat": "2.7 kg"
-   },
-   "Consumables - Updated": {
-    "Botol Tinta Hitam": "4.500 halaman - 003",
-    "Tinta Botol Cyan": "7.500 (Hasil Komposit) - 003",
-    "Botol Tinta Magenta": "7.500 (Hasil Komposit) - 003",
-    "Botol Tinta Kuning": "7.500 (Hasil Komposit) - 003"
-   },
-   "Interface": {
-    "USB": "USB 2.0",
-    "Jaringan": "Wi-Fi , Wi-Fi Direct",
-    "Protokol Jaringan": "TCP/IPv4, TCP/IPv6",
-    "Protokol Manajemen Jaringan": "SNMP, HTTP, DHCP, APIPA, PING, DDNS, mDNS, SLP, WSD, LLTD"
-   }
-  }
- },
- {
   "model": "L1256",
   "name": "Epson EcoTank L1256",
   "sku": "C11CJ71504",
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System-Printers/Epson-EcoTank-L1256-A4-Wi-Fi-Ink-Tank-Printer/p/C11CJ71504",
   "image": "assets/img/C11CJ71504.jpg",
   "category": "print",
-  "tagline": "Varian L1250 dengan Wi-Fi dan cetak dari smartphone.",
+  "tagline": "Printer warna ringkas dengan Wi-Fi dan cetak langsung dari smartphone.",
   "ink": "003",
   "isNew": false,
   "tkdn": false,
@@ -2044,7 +1946,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Home-Office-Printers/Epson-EcoTank-L5391-A4-All-in-One-Ink-Tank-Printer/p/C11CL59511",
   "image": "assets/img/C11CL59511.jpg",
   "category": "office",
-  "tagline": "Generasi baru dengan ADF, faks, Ethernet, dan Wi-Fi.",
+  "tagline": "Generasi baru dengan ADF, faks, Ethernet dan Wi-Fi.",
   "ink": "003",
   "isNew": true,
   "tkdn": false,
@@ -2482,7 +2384,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System-Printers/Epson-EcoTank-L6370-A4-Wi-Fi-Duplex-All-in-One-Ink-Tank-Printer/p/C11CL43501",
   "image": "assets/img/C11CL43501.jpg",
   "category": "office",
-  "tagline": "Duplex, ADF, dan baki 250 lembar untuk produktivitas.",
+  "tagline": "Duplex, ADF dan baki 250 lembar untuk produktivitas.",
   "ink": "001",
   "isNew": true,
   "tkdn": false,
@@ -2601,7 +2503,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System-Printers/Epson-EcoTank-L6390-A4-Wi-Fi-Duplex-All-in-One-Ink-Tank-Printer/p/C11CL40502",
   "image": "assets/img/C11CL40502.jpg",
   "category": "office",
-  "tagline": "Lengkap: duplex, ADF, faks, dan layar sentuh 2,4\".",
+  "tagline": "Lengkap: duplex, ADF, faks dan layar sentuh 2,4\".",
   "ink": "001",
   "isNew": true,
   "tkdn": false,
@@ -2869,7 +2771,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Home-Office-Printers/Printer-Epson-EcoTank-L6490-A4-Ink-Tank/p/C11CJ88502",
   "image": "assets/img/C11CJ88502.jpg",
   "category": "office",
-  "tagline": "Duplex, ADF, dan faks untuk kantor yang sibuk.",
+  "tagline": "Duplex, ADF dan faks untuk kantor yang sibuk.",
   "ink": "008",
   "isNew": false,
   "tkdn": false,
@@ -3479,7 +3381,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System-Printers/Epson-EcoTank-L14150-A3%2B-Wi-Fi-Duplex-Wide-Format-All-in-One-Ink-Tank-Printer/p/C11CH96502",
   "image": "assets/img/C11CH96502.jpg",
   "category": "a3",
-  "tagline": "All-in-One A3+ dengan duplex, ADF, faks, dan Ethernet.",
+  "tagline": "All-in-One A3+ dengan duplex, ADF, faks dan Ethernet.",
   "ink": "001",
   "isNew": false,
   "tkdn": false,
@@ -3633,7 +3535,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Home-Office-Printers/Epson-EcoTank-L15150-A3-Wi-Fi-Duplex-All-in-One-Ink-Tank-Printer/p/C11CH72502",
   "image": "assets/img/C11CH72502.jpg",
   "category": "a3",
-  "tagline": "A3 penuh (TKDN 68,94%): cetak, pindai, salin, dan duplex hingga A3.",
+  "tagline": "A3 penuh (TKDN 68,94%): cetak, pindai, salin dan duplex hingga A3.",
   "ink": "008",
   "isNew": false,
   "tkdn": true,
@@ -4741,7 +4643,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System-Printers/Printer-Tangki-Tinta-Epson-EcoTank-Monochrome-M1170-/p/C11CH44505",
   "image": "assets/img/C11CH44505.jpg",
   "category": "mono",
-  "tagline": "Mono All-in-One dengan ADF, faks, duplex, dan jaringan.",
+  "tagline": "Mono All-in-One dengan ADF, faks, duplex dan jaringan.",
   "ink": "005",
   "isNew": false,
   "tkdn": false,
@@ -5075,7 +4977,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System-Printers/Epson-EcoTank-Monochrome-M2170-Ink-Tank-Printer/p/C11CH43507",
   "image": "assets/img/C11CH43507.jpg",
   "category": "mono",
-  "tagline": "Mono All-in-One dengan ADF, faks, dan duplex.",
+  "tagline": "Mono All-in-One dengan ADF, faks dan duplex.",
   "ink": "005",
   "isNew": false,
   "tkdn": false,
@@ -5197,7 +5099,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System-Printers/Epson-EcoTank-Monochrome-M3170-Wi-Fi-All-in-One-Ink-Tank-Printer/p/C11CG92501",
   "image": "assets/img/C11CG92501.jpg",
   "category": "mono",
-  "tagline": "Mono All-in-One dengan layar sentuh 2,4\", ADF, dan faks.",
+  "tagline": "Mono All-in-One dengan layar sentuh 2,4\", ADF dan faks.",
   "ink": "005",
   "isNew": false,
   "tkdn": false,
