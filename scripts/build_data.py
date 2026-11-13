@@ -51,7 +51,7 @@ CURATED = {
     "M1100":  ("mono", "Printer mono ringkas untuk dokumen hitam-putih volume tinggi.", "005"),
     "M1120":  ("mono", "Printer mono dengan Wi-Fi.", "005"),
     "M1140":  ("mono", "Printer mono dengan duplex otomatis dan kaset 250 lembar.", "005"),
-    "M1170":  ("mono", "Mono All-in-One dengan ADF, faks, duplex dan jaringan.", "005"),
+    "M1170":  ("mono", "Mono All-in-One dengan faks, duplex dan jaringan.", "005"),
     "M2050":  ("mono", "Mono All-in-One generasi baru dengan ADF dan Wi-Fi.", "005"),
     "M2140":  ("mono", "Mono All-in-One dengan duplex otomatis.", "005"),
     "M2170":  ("mono", "Mono All-in-One dengan ADF, faks dan duplex.", "005"),
@@ -61,6 +61,9 @@ CURATED = {
     "WF-100": ("portable", "Printer portabel dengan baterai, hanya 1,6 kg.", "T289/T290"),
 }
 NEW_2026 = {"L1310", "L1350", "L3311", "L3316", "L3351", "L3356", "L4360", "L5391", "L6370", "L6390", "M1050", "M2050"}
+# Halaman spesifikasi Epson menyalin string "Tipe Printer ... dengan ADF" dari
+# model lain untuk dua SKU ini. Keduanya tidak memiliki ADF (revisi Nov 2026).
+NO_ADF = {"L3556", "M1170"}
 # Data resmi TKDN Epson (Valid efektif per 28 Agustus 2026): model -> (kode, nilai_tkdn, nilai_bmp, total, no_sertifikat)
 TKDN = {
     "L3211":  ("C11CJ68504", "52,80%", "13,65%", "66,45%", "6109/SJ-IND.8/E-TKDN/5/2025"),
@@ -217,7 +220,25 @@ def main():
                 kv = {k: re.sub(r"C13T03Y([1-4])00", r"008 (C13T06G\g<1>00)", v) for k, v in kv.items()}
             if model in ("M15140", "M15180") and "Consumables" in c:
                 kv = {k: re.sub(r"008\b[^,]*", "005", v) for k, v in kv.items()}
+            if model in NO_ADF:
+                # Buang seluruh jejak ADF yang ikut tersalin dari model lain.
+                if "ADF" in c:
+                    continue
+                # Koreksi "Tipe Printer" lebih dulu, kalau tidak baris ini akan
+                # ikut terbuang oleh filter ADF di bawah.
+                if c == "Printer Type" and "Tipe Printer" in kv:
+                    kv = dict(kv)
+                    t = re.sub(r"\s+dengan ADF", "", kv["Tipe Printer"], flags=re.I)
+                    if model == "L3556":  # situs juga keliru menyertakan faks
+                        t = re.sub(r",?\s*Faks", "", t, flags=re.I)
+                    kv["Tipe Printer"] = t.strip().rstrip(",")
+                kv = {k: v for k, v in kv.items()
+                      if "ADF" not in k and "ADF" not in str(v)}
+            if not kv:
+                continue
             clean_specs[c] = kv
+        adf = ("ADF" in find(specs, r"Tipe Printer")
+               or any("ADF" in k for kv in specs.values() for k in kv)) and model not in NO_ADF
         out.append({
             "model": model,
             "name": p["name"].strip(),
@@ -237,7 +258,7 @@ def main():
             "wifi": "wi-fi" in net.lower() or "wifi" in net.lower(),
             "ethernet": "ethernet" in net.lower(),
             "duplex": yes(find(specs, r"2 Sisi")),
-            "adf": "ADF" in find(specs, r"Tipe Printer") or any("ADF" in k for kv in specs.values() for k in kv),
+            "adf": adf,
             "resolution": find(specs, r"Resolusi (Cetak )?Maksimum").split("(")[0].strip(),
             "speedIso": find(specs, r"ISO 24734"),
             "speedDraft": find(specs, r"^Draf"),

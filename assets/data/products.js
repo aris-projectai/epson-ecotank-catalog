@@ -1434,7 +1434,7 @@ window.PRODUCTS = [
   "wifi": true,
   "ethernet": true,
   "duplex": false,
-  "adf": true,
+  "adf": false,
   "resolution": "4800 x 1200 dpi",
   "speedIso": "Simplex: Up to 15.0 ipm / 8.0 ipm",
   "speedDraft": "Up to 33.0 ppm / 20.0 ppm",
@@ -1444,7 +1444,7 @@ window.PRODUCTS = [
   "inherited": false,
   "specs": {
    "Printer Type": {
-    "Tipe Printer": "Cetak, Pindai, Salin, Faks dengan ADF"
+    "Tipe Printer": "Cetak, Pindai, Salin"
    },
    "Printing Technology": {
     "Bahasa Printer": "ESC/P-R, ESC/P Raster",
@@ -4643,7 +4643,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System-Printers/Printer-Tangki-Tinta-Epson-EcoTank-Monochrome-M1170-/p/C11CH44505",
   "image": "assets/img/C11CH44505.jpg",
   "category": "mono",
-  "tagline": "Mono All-in-One dengan ADF, faks, duplex dan jaringan.",
+  "tagline": "Mono All-in-One dengan faks, duplex dan jaringan.",
   "ink": "005",
   "isNew": false,
   "tkdn": false,
@@ -4660,7 +4660,7 @@ window.PRODUCTS = [
   "wifi": true,
   "ethernet": true,
   "duplex": true,
-  "adf": true,
+  "adf": false,
   "resolution": "1200 x 2400 dpi",
   "speedIso": "",
   "speedDraft": "",
@@ -4670,13 +4670,12 @@ window.PRODUCTS = [
   "inherited": false,
   "specs": {
    "Printer Type": {
-    "Tipe Printer": "Cetak, Pindai, Salin, Faks dengan ADF"
+    "Tipe Printer": "Cetak, Pindai, Salin, Faks"
    },
    "Copying": {
     "Salinan Maksimum Dari Dokumen Mandiri": "99 salinan",
     "Reduksi / Pembesaran": "25 - 400%, Fungsi Auto Fit",
     "Resolusi Salin Maksimum": "600 x 600 dpi",
-    "Ukuran Salin Maksimum": "Legal (ADF)",
     "ISO 29183, A4, Simpleks (Hitam)": "Hingga 17 ipm"
    },
    "Scan Function": {
@@ -4689,11 +4688,7 @@ window.PRODUCTS = [
     "Kedalaman Bit Pemindai (Hitam & Putih)": "Input 16-bit, output 1-bit"
    },
    "Scan Speed": {
-    "Flatbed (200dpi)": "Monokrom: 12 detik Warna: 27 detik",
-    "ADF (200dpi)": "Monokrom: 7.0 ipm Warna: 7.0 ipm"
-   },
-   "ADF Specifications": {
-    "Kapasitas ADF": "64 to 95 g/m"
+    "Flatbed (200dpi)": "Monokrom: 12 detik Warna: 27 detik"
    },
    "Fax Function": {
     "Jenis Faks": "Kapabilitas menjalankan faks hitam-dan-putih serta warna",
@@ -4702,7 +4697,6 @@ window.PRODUCTS = [
     "Kecepatan Faks (Nilai Transfer Data)": "Hingga 33,6 kbps, Sekitar 3 detik/halaman",
     "Resolusi Faks": "Hingga 200 x 200 dpi",
     "Ukuran Kertas Transmisi (Flatbed)": "Letter, A4",
-    "Ukuran Kertas Transmisi (ADF)": "Letter, A4, 8.5 x 13\", Legal",
     "Ukuran Kertas Penerima": "Letter, A4, Legal",
     "Panggilan Cepat / Panggilan Grup": "Hingga 100 nomor, 99 grup"
    },
